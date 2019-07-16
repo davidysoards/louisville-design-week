@@ -1,3 +1,9 @@
+:root {
+  --color-bg: white;
+  --color-text: #222;
+  --color-primary: teal;
+}
+
 html {
   box-sizing: border-box;
   font-size: 10px;
@@ -17,6 +23,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 2rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background 1s, color 0.3s;
+}
+
+button {
+  background: none;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background 1s, color 1s, border-color 0.3s;
 }
 
 h1,
@@ -24,10 +47,13 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin: 0;
-  padding: 0;
+  color: var(--color-primary);
+}
+
+p {
+  margin: 0 0 1rem 0;
 }
 
 a {

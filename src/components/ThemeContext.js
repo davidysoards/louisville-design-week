@@ -1,41 +1,20 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, } from 'react';
 import styled from '@emotion/styled';
-import { ThemeProvider } from 'emotion-theming';
 
 const ToggleContext = createContext();
 
 const MyThemeProvider = ({ children }) => {
-  const [themeMode, setThemeMode] = useState('light');
 
-  useEffect(() => {
-    if (localStorage.getItem('mode') === 'dark') setThemeMode('dark');
-  }, []);
-
-  const mode = themeMode === 'dark' ? darkMode : lightMode;
-
-  const StylesWrapper = styled.div`
-    background: ${mode.background};
-    color: ${mode.color};
-    h1 {
-      color: ${mode.headingColor};
-    }
-    a {
-      color: ${mode.linkColor};
-    }
-  `;
-
-  if (!themeMode) return <div />;
+  const StylesWrapper = styled.div``;
 
   return (
-    <ToggleContext.Provider value={[themeMode, setThemeMode]}>
-      <ThemeProvider theme={{ mode }}>
+    <ToggleContext.Provider value={}>
         <StylesWrapper>{children}</StylesWrapper>
-      </ThemeProvider>
     </ToggleContext.Provider>
   );
 };
 
-export { MyThemeProvider, ToggleContext };
+export default MyThemeProvider;
 
 // =COLORS
 const white = '#FFFFFF';

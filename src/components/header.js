@@ -1,21 +1,10 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from '@emotion/styled';
-import { withTheme } from 'emotion-theming';
-import { ToggleContext } from './ThemeContext';
 
-const Header = ({ siteTitle, theme }) => {
-  const [themeMode, setThemeMode] = useContext(ToggleContext);
-
-  const toggleTheme = () => {
-    const mode = themeMode === 'dark' ? 'light' : 'dark';
-    setThemeMode(mode);
-    localStorage.setItem('mode', mode);
-  };
-
+const Header = ({ siteTitle, toggleTheme }) => {
   const Wrapper = styled.header`
-    background: ${theme.mode.background};
     margin-bottom: 2rem;
   `;
   const Container = styled.div`
@@ -46,4 +35,4 @@ Header.defaultProps = {
   siteTitle: ``,
 };
 
-export default withTheme(Header);
+export default Header;

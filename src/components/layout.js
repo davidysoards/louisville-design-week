@@ -5,16 +5,46 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import { MyThemeProvider } from './ThemeContext';
 
 import Header from './header';
 import 'normalize.css';
 import './layout.css';
 
+const lightTheme = {
+  '--color-text': 'black',
+  '--color-bg': 'white',
+  '--color-primary': 'teal',
+};
+const darkTheme = {
+  '--color-text': 'white',
+  '--color-bg': 'black',
+  '--color-primary': 'purple',
+};
+
 const Layout = ({ children }) => {
+  const [currentMode, setCurrentMode] = useState('light');
+
+  const toggleTheme = () => {
+    const newMode = currentMode === 'light' ? 'dark' : 'light';
+    setCurrentMode(newMode);
+    localStorage.setItem('mode', newMode);
+  };
+
+  useEffect(() => {
+    if (localStorage.getItem('mode') === 'dark') setCurrentMode('dark');
+  }, []);
+
+  useEffect(() => {
+    const theme = currentMode === 'light' ? lightTheme : darkTheme;
+    Object.keys(theme).map(key => {
+      const value = theme[key];
+      document.documentElement.style.setProperty(key, value);
+    });
+  }, [currentMode]);
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,8 +56,11 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <MyThemeProvider>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        toggleTheme={toggleTheme}
+      />
       <div
         style={{
           margin: `0 auto`,
@@ -42,7 +75,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org"> Gatsby</a>
         </footer>
       </div>
-    </MyThemeProvider>
+    </>
   );
 };
 
