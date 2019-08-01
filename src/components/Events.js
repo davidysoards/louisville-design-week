@@ -11,7 +11,7 @@ const Events = () => {
       'https://www.eventbriteapi.com/v3/events/search/',
       {
         params: {
-          token: 'SM76GTFDOG4Z7JHHCB5J',
+          token: `${process.env.GATSBY_EB_TOKEN}`,
           'organizer.id': '846197205',
           expand: 'venue',
         },

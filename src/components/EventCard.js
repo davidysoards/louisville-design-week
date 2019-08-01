@@ -14,10 +14,10 @@ const EventCard = ({ name, summary, logo, start, end, venue }) => {
       <img src={logo} alt="" />
       <Wrapper>
         <Text>
-          <Col1>
+          <Column1>
             <Day>{dayOfWeek}</Day>
             <Time>{time}</Time>
-          </Col1>
+          </Column1>
           <div>
             <Name>{name}</Name>
             <Venue>{venue}</Venue>
@@ -56,7 +56,7 @@ const Text = styled.div`
   grid-gap: 10px;
 `;
 
-const Col1 = styled.div`
+const Column1 = styled.div`
   align-self: center;
   text-align: center;
 `;
