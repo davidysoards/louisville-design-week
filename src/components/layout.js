@@ -8,38 +8,47 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-
-import Header from './header';
-import 'normalize.css';
 import './layout.css';
 
+import Header from './Header';
+import Footer from './Footer';
+
 const lightTheme = {
-  '--color-text': 'black',
-  '--color-bg': 'white',
-  '--color-primary': 'teal',
+  '--color-text': '#994cc3',
+  '--color-bg': '#f0f0f0',
+  '--color-primary': '#EF5350',
+  '--color-secondary': '#0c969b',
+  '--color-header-bg': 'rgba(255, 255, 255, 0.9)',
 };
 const darkTheme = {
-  '--color-text': 'white',
-  '--color-bg': 'black',
-  '--color-primary': 'purple',
+  '--color-text': '#82AAFF',
+  '--color-bg': '#011627',
+  '--color-primary': '#c792ea',
+  '--color-secondary': '#7fdbca',
+  '--color-header-bg': 'rgba(1, 10, 18, 0.9)',
 };
 
 const Layout = ({ children }) => {
   const [currentMode, setCurrentMode] = useState('light');
+  const [isChecked, setIsChecked] = useState(false);
 
   const toggleTheme = () => {
     const newMode = currentMode === 'light' ? 'dark' : 'light';
+    setIsChecked(!isChecked);
     setCurrentMode(newMode);
     localStorage.setItem('mode', newMode);
   };
 
   useEffect(() => {
-    if (localStorage.getItem('mode') === 'dark') setCurrentMode('dark');
+    if (localStorage.getItem('mode') === 'dark') {
+      setCurrentMode('dark');
+      setIsChecked(true);
+    }
   }, []);
 
   useEffect(() => {
     const theme = currentMode === 'light' ? lightTheme : darkTheme;
-    Object.keys(theme).map(key => {
+    Object.keys(theme).forEach(key => {
       const value = theme[key];
       document.documentElement.style.setProperty(key, value);
     });
@@ -50,6 +59,10 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          menuLinks {
+            name
+            link
+          }
         }
       }
     }
@@ -59,22 +72,12 @@ const Layout = ({ children }) => {
     <>
       <Header
         siteTitle={data.site.siteMetadata.title}
+        menuLinks={data.site.siteMetadata.menuLinks}
         toggleTheme={toggleTheme}
+        isChecked={isChecked}
       />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          <a href="https://www.gatsbyjs.org"> Gatsby</a>
-        </footer>
-      </div>
+      <main>{children}</main>
+      <Footer />
     </>
   );
 };
