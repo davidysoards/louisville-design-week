@@ -1,30 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: `Design Week 2019`,
-    description: `Info and Events Calendar for AIGA Louisville's Annual Design Week.`,
+    title: `Louisville Design Week`,
+    subtitle: `September 9th - 14th, 2019`,
+    description: `Info on Events and Schedule for AIGA Louisville's Annual Design Week.`,
     author: `David Soards`,
     menuLinks: [
-      // {
-      //   name: 'Home',
-      //   link: '/',
-      // },
       {
         name: 'Speakers',
         link: '/speakers',
       },
       {
-        name: 'Theme',
-        link: '/theme',
-      },
-      {
-        name: 'Storefront',
-        link: '/storefront',
+        name: 'Schedule',
+        link: '/schedule',
       },
     ],
   },
   plugins: [
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,16 +26,23 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `aiga-louisville-design-week-2019`,
-        short_name: `design-week`,
+        name: `AIGALou`,
+        short_name: `AIGALou`,
         start_url: `/`,
-        background_color: `#f0f0f0`,
-        theme_color: `#ef5350`,
+        background_color: `#8B55A3`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
         icon: `src/images/aiga-icon.png`, // This path is relative to the root of the site.
       },

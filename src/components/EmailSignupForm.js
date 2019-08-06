@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const EmailSignupForm = () => {
+export default function EmailSignupForm() {
   return (
     <Container>
       <form
@@ -58,9 +58,7 @@ const EmailSignupForm = () => {
       </form>
     </Container>
   );
-};
-
-export default EmailSignupForm;
+}
 
 const Container = styled.div`
   form {

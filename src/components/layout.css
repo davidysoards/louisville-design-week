@@ -25,19 +25,6 @@ body {
   transition: background 0.8s, color 0.8s;
 }
 
-button {
-  background: var(--color-secondary);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
 h1,
 h2,
 h3,
@@ -56,11 +43,14 @@ a {
   text-decoration: none;
   color: var(--color-secondary);
 }
+a:hover {
+  opacity: 0.9;
+}
 
 img {
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  width: 100%;
 }
 
 ol,
@@ -78,4 +68,10 @@ table,
 th,
 td {
   border: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
 }

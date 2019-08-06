@@ -5,11 +5,10 @@ import styled from '@emotion/styled';
 
 // import SvgAlwaysOpen from './SvgAlwaysOpen';
 import EmailSignupForm from './EmailSignupForm';
-import { white } from 'ansi-colors';
 
 import SocialLinks from './SocialLinks';
 
-const Footer = props => {
+export default function Footer() {
   return (
     <FooterWrapper>
       <Container>
@@ -20,7 +19,7 @@ const Footer = props => {
           </Column1>
           <Column2>
             <SocialTitle>Follow AIGALou On Social</SocialTitle>
-            <SocialLinks />
+            <SocialLinks fontSize="2em" />
             <p>
               This site was built by David Soards with React and Gatsby. It is
               hosted on Netlify and you can view the source code on GitHub.
@@ -31,11 +30,10 @@ const Footer = props => {
       </Container>
     </FooterWrapper>
   );
-};
+}
 
 // Footer.propTypes = {};
 
-export default Footer;
 const EmailTitle = styled.h3`
   margin-bottom: 20px;
   text-align: center;

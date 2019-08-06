@@ -6,8 +6,9 @@ import styled from '@emotion/styled';
 import ToggleSwitch from './ToggleSwitch';
 import SvgAigaLou from './SvgAigaLou';
 import SvgMenuBars from './SvgMenuBars';
+import SocialLinks from './SocialLinks';
 
-const Header = ({ siteTitle, menuLinks, toggleTheme, isChecked }) => {
+export default function Header({ menuLinks, toggleTheme, isChecked }) {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [menuHeight, setMenuHeight] = useState(0);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -52,15 +53,19 @@ const Header = ({ siteTitle, menuLinks, toggleTheme, isChecked }) => {
           </Link>
           <MenuWrapper>
             <NavDesktop>
+              <a href="#">
+                <Button>Buy Passport</Button>
+              </a>
               {menuLinks.map(link => (
                 <Link
                   to={link.link}
-                  activeStyle={{ color: 'red' }}
+                  activeStyle={{ color: 'var(--color-secondary)' }}
                   key={link.name}
                 >
                   {link.name}
                 </Link>
               ))}
+              <SocialLinks fontSize="1em" />
             </NavDesktop>
             <Label htmlFor="mode">
               <ToggleSwitch
@@ -73,29 +78,39 @@ const Header = ({ siteTitle, menuLinks, toggleTheme, isChecked }) => {
             </Label>
           </MenuWrapper>
         </Container>
-        <NavMobile style={{ height: isExpanded ? menuHeight : 0 }}>
-          <div ref={measuredRef}>
+        <NavMobile
+          style={{ height: isExpanded ? menuHeight : 0 }}
+          aria-expanded={isExpanded}
+        >
+          <NavMobileContainer ref={measuredRef}>
+            <Row>
+              <a href="#">
+                <Button>Buy Passport</Button>
+              </a>
+            </Row>
             {menuLinks.map(link => (
-              <Link
-                to={link.link}
-                activeStyle={{ color: 'red' }}
-                key={link.name}
-              >
-                {link.name}
-              </Link>
+              <Row key={link.name}>
+                <Link
+                  to={link.link}
+                  activeStyle={{ color: 'var(--color-secondary)' }}
+                >
+                  {link.name}
+                </Link>
+              </Row>
             ))}
-          </div>
+            <Row>
+              <SocialLinks fontSize="1em" />
+            </Row>
+          </NavMobileContainer>
         </NavMobile>
       </div>
     </HeaderNav>
   );
-};
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
 };
-
-export default Header;
 
 const HeaderNav = styled.header`
   .header {
@@ -105,15 +120,17 @@ const HeaderNav = styled.header`
     z-index: 99;
     padding: 0;
     transition: background 0.8s, color 0.5s, padding 0.3s ease-out;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     @media screen and (min-width: 768px) {
       background: none;
       padding: 10px 0;
+      box-shadow: none;
     }
     a {
       color: var(--color-primary);
     }
     .logo {
-      fill: var(--color-text);
+      fill: var(--color-primary);
       transition: fill 0.5s;
       height: 32px;
       @media screen and (min-width: 768px) {
@@ -126,6 +143,7 @@ const HeaderNav = styled.header`
         color: var(--color-text);
         background: var(--color-header-bg);
         padding: 0;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
       }
     }
   }
@@ -175,19 +193,17 @@ const NavMobile = styled.nav`
   background: var(--color-header-bg);
   overflow: hidden;
   transition: height 0.3s ease-in;
-  div {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 3px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  }
-  a {
-    padding: 15px 10px;
-    border-top: 2px solid var(--color-primary);
-  }
   @media screen and (min-width: 768px) {
     display: none;
   }
+`;
+const NavMobileContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+const Row = styled.div`
+  padding: 15px 10px;
+  border-top: 2px solid var(--color-text);
 `;
 
 const Label = styled.label`
@@ -200,5 +216,23 @@ const Label = styled.label`
       font-size: 0.7em;
       margin-left: 10px;
     }
+  }
+`;
+
+const Button = styled.button`
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--color-secondary);
+  border: none;
+  color: var(--color-bg);
+  cursor: pointer;
+  transition: box-shadow 0.3s, color 0.8s, transform 0.2s ease-out;
+  &:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.6);
+    transform: translate3d(0, -2px, 0);
   }
 `;

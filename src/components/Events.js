@@ -3,7 +3,7 @@ import axios from 'axios';
 import styled from '@emotion/styled';
 import EventCard from './EventCard';
 
-const Events = () => {
+export default function Events() {
   const [myEvents, setMyEvents] = useState();
 
   async function fetchEvents() {
@@ -33,8 +33,7 @@ const Events = () => {
 
   const { name, summary, logo, start, end, venue } = myEvents[0];
   return (
-    <Container>
-      <Heading>Upcoming Events</Heading>
+    <>
       <Grid>
         <EventCard
           name={name.text}
@@ -85,31 +84,9 @@ const Events = () => {
           venue={venue.name}
         />
       </Grid>
-    </Container>
+    </>
   );
-};
-
-export default Events;
-
-const Container = styled.section`
-  margin: 0 auto;
-  padding: 10px;
-  max-width: 1200px;
-`;
-
-const Heading = styled.h1`
-  font-size: 1.5em;
-  text-transform: uppercase;
-  margin: 0.5em 0;
-  text-align: center;
-  @media screen and (min-width: 768px) {
-    text-align: left;
-    font-size: 2em;
-  }
-  @media screen and (min-width: 1024px) {
-    font-size: 3em;
-  }
-`;
+}
 
 const Grid = styled.section`
   display: grid;

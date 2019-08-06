@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const ToggleSwitch = ({ toggleTheme, isChecked, ariaLabel, id }) => {
+export default function ToggleSwitch({
+  toggleTheme,
+  isChecked,
+  ariaLabel,
+  id,
+}) {
   return (
     <Toggle>
       <Input
@@ -14,9 +19,7 @@ const ToggleSwitch = ({ toggleTheme, isChecked, ariaLabel, id }) => {
       <Slider></Slider>
     </Toggle>
   );
-};
-
-export default ToggleSwitch;
+}
 
 const Toggle = styled.div`
   position: relative;

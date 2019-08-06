@@ -28,7 +28,7 @@ const darkTheme = {
   '--color-header-bg': 'rgba(1, 10, 18, 0.9)',
 };
 
-const Layout = ({ children }) => {
+export default function Layout({ children }) {
   const [currentMode, setCurrentMode] = useState('light');
   const [isChecked, setIsChecked] = useState(false);
 
@@ -80,10 +80,8 @@ const Layout = ({ children }) => {
       <Footer />
     </>
   );
-};
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default Layout;

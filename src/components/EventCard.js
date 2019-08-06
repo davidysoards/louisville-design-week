@@ -2,7 +2,7 @@ import React from 'react';
 import { format } from 'date-fns';
 import styled from '@emotion/styled';
 
-const EventCard = ({ name, summary, logo, start, end, venue }) => {
+export default function EventCard({ name, logo, start, end, venue }) {
   const dayOfWeek = format(start, 'ddd').toUpperCase();
   const time = format(start, 'h:mm');
   const startTime = format(start, 'h:mm A');
@@ -26,13 +26,11 @@ const EventCard = ({ name, summary, logo, start, end, venue }) => {
             </StartToEnd>
           </div>
         </Text>
-        <Button>Buy Tickets</Button>
+        {/* <Button>Buy Tickets</Button> */}
       </Wrapper>
     </Card>
   );
-};
-
-export default EventCard;
+}
 
 const Card = styled.div`
   background: white;
@@ -82,8 +80,18 @@ const Venue = styled.div`
 const StartToEnd = styled.div`
   font-size: 0.8em;
 `;
+
 const Button = styled.button`
-  /* background: #0c969b; */
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--color-secondary);
+  border: none;
+  color: white;
+  cursor: pointer;
   margin-top: 10px;
   transition: box-shadow 0.3s, transform 0.3s ease-out;
   &:hover {
