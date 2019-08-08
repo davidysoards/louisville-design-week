@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import { graphql } from 'gatsby';
 
@@ -18,7 +17,7 @@ export default function HomePage({ data }) {
       <SEO title="Home" />
       <Hero>
         <SvgWrapper>
-          <SvgAlwaysOpen width="100%" />
+          <SvgAlwaysOpen width="100%" intensity={4} blur={20} />
         </SvgWrapper>
         <div>
           <Heading>Louisville Design Week</Heading>
@@ -38,7 +37,7 @@ export default function HomePage({ data }) {
           </p>
         </div>
       </Hero>
-      <SectionHeading>Featured Speakers</SectionHeading>
+      <SectionHeading>Keynote Speaker</SectionHeading>
       {featuredSpeakers.map(speaker => (
         <SpeakerFeatured
           imgSrc={speaker.image}

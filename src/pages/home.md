@@ -9,39 +9,16 @@ featuredSpeakers:
     job: Partner @ Anderson Newton Design
     website: https://gailycurl.com/
     socialLinks:
-      twitter: '@gailycurl'
-      facebook: /gailanderson
-      instagram: '@gailycurl'
-    bio: "<p>Designer, writer, and educator Gail Anderson is the chair of BFA
-Advertising and BFA Design at the School of Visual Arts and the
-creative director at Visual Arts Press at SVA. Anderson is a partner
-at Anderson Newton Design and serves on the Citizens’ Stamp Advisory
-Committee for the USPS and the advisory board for Poster House.</p>
-<p>She is the recipient of the Cooper Hewitt National Design Award for
-Lifetime Achievement and is an AIGA Medalist. Anderson is co-author of
-15 books on design, typography, and illustration with Steven Heller,
-and her work is in the collections of the Library of Congress and the
-Milton Glaser Design Archives at the School of Visual Arts.</p>"
-
-  - name: Other Anderson
-    image: /images/headshot-gail-anderson.jpg
-    alt: gail anderson headshot
-    job: Bad Ass
-    website: https://gailycurl.com/
-    socialLinks:
-      twitter:
+      twitter: gailycurl
       facebook:
-      instagram:
-    bio: "<p>Designer, writer, and educator Gail Anderson is the chair of BFA
-Advertising and BFA Design at the School of Visual Arts and the
-creative director at Visual Arts Press at SVA. Anderson is a partner
-at Anderson Newton Design and serves on the Citizens’ Stamp Advisory
-Committee for the USPS and the advisory board for Poster House.</p>
-<p>She is the recipient of the Cooper Hewitt National Design Award for
-Lifetime Achievement and is an AIGA Medalist. Anderson is co-author of
-15 books on design, typography, and illustration with Steven Heller,
-and her work is in the collections of the Library of Congress and the
-Milton Glaser Design Archives at the School of Visual Arts.</p>"
+      instagram: gailycurl
+    bio: "<p>Designer, writer, and educator Gail Anderson is a New York-based designer, writer, and educator. She is a partner, with Joe Newton, at Anderson Newton Design. From 1987 to early 2002, she worked at Rolling Stone magazine, serving as designer, deputy art director, and finally, as the magazine's senior art director.</p>
+    <p>She is the recipient of the Cooper Hewitt National Design Award for
+    Lifetime Achievement and is an AIGA Medalist. Anderson is co-author of
+    15 books on design, typography, and illustration with Steven Heller,
+    and her work is in the collections of the Library of Congress and the
+    Milton Glaser Design Archives at the School of Visual Arts.</p>"
+
 ---
 
 Design is, at it’s best, the convergence of a universal source of

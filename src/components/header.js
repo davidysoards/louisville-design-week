@@ -112,6 +112,8 @@ Header.propTypes = {
   siteTitle: PropTypes.string,
 };
 
+const bpMed = '1000px';
+
 const HeaderNav = styled.header`
   .header {
     background: var(--color-header-bg);
@@ -121,7 +123,7 @@ const HeaderNav = styled.header`
     padding: 0;
     transition: background 0.8s, color 0.5s, padding 0.3s ease-out;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: ${bpMed}) {
       background: none;
       padding: 10px 0;
       box-shadow: none;
@@ -133,13 +135,13 @@ const HeaderNav = styled.header`
       fill: var(--color-primary);
       transition: fill 0.5s;
       height: 32px;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: ${bpMed}) {
         height: 40px;
       }
     }
 
     &.headerScrolled {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: ${bpMed}) {
         color: var(--color-text);
         background: var(--color-header-bg);
         padding: 0;
@@ -159,7 +161,7 @@ const MenuButton = styled.button`
     transition: fill 0.5s;
     height: 40px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${bpMed}) {
     display: none;
   }
 `;
@@ -180,7 +182,7 @@ const MenuWrapper = styled.div`
 
 const NavDesktop = styled.nav`
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${bpMed}) {
     display: flex;
     align-items: center;
     a {
@@ -193,7 +195,7 @@ const NavMobile = styled.nav`
   background: var(--color-header-bg);
   overflow: hidden;
   transition: height 0.3s ease-in;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${bpMed}) {
     display: none;
   }
 `;
@@ -211,7 +213,7 @@ const Label = styled.label`
   align-items: center;
   .message {
     display: none;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: ${bpMed}) {
       display: inline;
       font-size: 0.7em;
       margin-left: 10px;
@@ -228,11 +230,12 @@ const Button = styled.button`
   text-transform: uppercase;
   background: var(--color-secondary);
   border: none;
-  color: var(--color-bg);
+  color: var(--color-header-bg);
   cursor: pointer;
-  transition: box-shadow 0.3s, color 0.8s, transform 0.2s ease-out;
+  transition: box-shadow 0.3s, color 0.5s, transform 0.2s ease-out;
   &:hover {
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.6);
     transform: translate3d(0, -2px, 0);
+    color: white;
   }
 `;

@@ -4,6 +4,8 @@
   --color-primary: #ef5350;
   --color-secondary: #0c969b;
   --color-header-bg: rgba(255, 255, 255, 0.9);
+  --color-neon-fill: #ef5350;
+  --color-neon-glow: none;
 }
 
 html {
@@ -44,7 +46,7 @@ a {
   color: var(--color-secondary);
 }
 a:hover {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 img {

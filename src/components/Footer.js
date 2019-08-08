@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 
 // import PropTypes from 'prop-types';
 
-// import SvgAlwaysOpen from './SvgAlwaysOpen';
 import EmailSignupForm from './EmailSignupForm';
 
 import SocialLinks from './SocialLinks';
@@ -19,7 +18,9 @@ export default function Footer() {
           </Column1>
           <Column2>
             <SocialTitle>Follow AIGALou On Social</SocialTitle>
-            <SocialLinks fontSize="2em" />
+            <SocialWrapper>
+              <SocialLinks fontSize="2em" />
+            </SocialWrapper>
             <p>
               This site was built by David Soards with React and Gatsby. It is
               hosted on Netlify and you can view the source code on GitHub.
@@ -41,6 +42,10 @@ const EmailTitle = styled.h3`
 
 const SocialTitle = styled.h3`
   text-align: center;
+`;
+
+const SocialWrapper = styled.h3`
+  margin: 20px 0;
 `;
 
 const FooterWrapper = styled.div`

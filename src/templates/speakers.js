@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 // import { Link } from 'gatsby';
 import styled from '@emotion/styled';
@@ -35,9 +34,13 @@ export default function SpeakersPage({ data }) {
 const PageTitle = styled.h1`
   text-align: center;
   margin-top: 64px;
+  margin-bottom: 10px;
   font-size: 2em;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 700px) {
     font-size: 3em;
+  }
+  @media screen and (min-width: 1000px) {
+    text-align: left;
     margin-top: 84px;
   }
 `;

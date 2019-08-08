@@ -18,7 +18,7 @@ export default function Speaker({ imgSrc, imgAlt, name, job, website }) {
 const Container = styled.div`
   margin: 0 auto;
   padding: 10px;
-  width: 220px;
+  width: 270px;
   text-align: center;
   img {
     border-radius: 100%;
@@ -26,7 +26,10 @@ const Container = styled.div`
   }
 `;
 
-const Name = styled.h3``;
+const Name = styled.h3`
+  font-size: 1.25em;
+`;
 const Job = styled.p`
   font-size: 0.9em;
+  line-height: 1.2;
 `;
