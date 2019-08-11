@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
 export default function Speaker({ imgSrc, imgAlt, name, job, website }) {
@@ -14,6 +15,14 @@ export default function Speaker({ imgSrc, imgAlt, name, job, website }) {
     </Container>
   );
 }
+
+Speaker.propTypes = {
+  name: PropTypes.string.isRequired,
+  job: PropTypes.string.isRequired,
+  website: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
+  imgAlt: PropTypes.string.isRequired,
+};
 
 const Container = styled.div`
   margin: 0 auto;

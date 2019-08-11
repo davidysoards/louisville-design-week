@@ -15,7 +15,6 @@
     "gatsby-plugin-manifest": "^2.2.3",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
-    "gatsby-plugin-sass": "^2.1.3",
     "gatsby-plugin-sharp": "^2.2.7",
     "gatsby-plugin-typography": "^2.3.2",
     "gatsby-source-filesystem": "^2.1.5",
@@ -33,7 +32,9 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "design",
+    "louisville",
+    "aiga"
   ],
   "license": "MIT",
   "scripts": {
@@ -46,10 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/davidysoards/louisville-design-week"
   },
   "browserslist": [
     ">1%",

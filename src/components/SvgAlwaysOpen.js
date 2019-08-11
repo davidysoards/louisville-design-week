@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/core';
 import { ModeContext } from './layout';
@@ -12,7 +13,7 @@ function addIntensity(num) {
   return arr;
 }
 
-const SvgAlwaysOpen = ({ width, intensity, blur }) => {
+export default function SvgAlwaysOpen({ width, intensity, blur }) {
   const mode = useContext(ModeContext);
   return (
     <svg viewBox="0 0 1280 1080" width={width}>
@@ -78,9 +79,13 @@ const SvgAlwaysOpen = ({ width, intensity, blur }) => {
       />
     </svg>
   );
-};
+}
 
-export default SvgAlwaysOpen;
+SvgAlwaysOpen.propTypes = {
+  width: PropTypes.string.isRequired,
+  intensity: PropTypes.number.isRequired,
+  blur: PropTypes.number.isRequired,
+};
 
 const flicker = keyframes`
   from  { opacity: 0; }

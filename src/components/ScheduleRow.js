@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
 export default function ScheduleRow({
@@ -35,6 +36,17 @@ export default function ScheduleRow({
     </EventRow>
   );
 }
+
+ScheduleRow.propTypes = {
+  startTime: PropTypes.string.isRequired,
+  endTime: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  location: PropTypes.string,
+  googleMapUrl: PropTypes.string,
+  imgSrc: PropTypes.string,
+  imgAlt: PropTypes.string,
+};
 
 const EventRow = styled.div`
   display: grid;

@@ -40,10 +40,11 @@ export default function HomePage({ data }) {
       <SectionHeading>Featured Speakers</SectionHeading>
       {featuredSpeakers.map(speaker => (
         <SpeakerFeatured
-          imgSrc={speaker.image}
-          imgAlt={speaker.alt}
           name={speaker.name}
           bio={speaker.bio}
+          website={speaker.website}
+          imgSrc={speaker.image}
+          imgAlt={speaker.alt}
           key={speaker.name}
         />
       ))}
@@ -62,10 +63,11 @@ export const query = graphql`
         node {
           frontmatter {
             featuredSpeakers {
-              image
               name
-              alt
               bio
+              website
+              image
+              alt
             }
           }
         }

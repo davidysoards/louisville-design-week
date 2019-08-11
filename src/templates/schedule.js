@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-// import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { graphql } from 'gatsby';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import ScheduleRow from '../components/ScheduleRow';
@@ -10,7 +9,7 @@ import ScheduleRow from '../components/ScheduleRow';
 export default function SchedulePage({ data }) {
   const [daySelectIndex, setDaySelectIndex] = useState(0);
 
-  // console.log(data);
+  console.log(data);
   const days = data.allMarkdownRemark.edges;
   return (
     <Layout>
@@ -60,6 +59,10 @@ export default function SchedulePage({ data }) {
     </Layout>
   );
 }
+
+SchedulePage.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 const PageTitle = styled.h1`
   text-align: center;

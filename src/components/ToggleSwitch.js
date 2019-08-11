@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
 export default function ToggleSwitch({
@@ -20,6 +21,13 @@ export default function ToggleSwitch({
     </Toggle>
   );
 }
+
+ToggleSwitch.propTypes = {
+  toggleTheme: PropTypes.func.isRequired,
+  isChecked: PropTypes.bool.isRequired,
+  ariaLabel: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 const Toggle = styled.div`
   position: relative;

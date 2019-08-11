@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 
@@ -31,6 +32,10 @@ export default function SocialLinks({ fontSize }) {
     </Wrapper>
   );
 }
+
+SocialLinks.propTypes = {
+  fontSize: PropTypes.string.isRequired,
+};
 
 const IconContainer = styled.div`
   display: flex;

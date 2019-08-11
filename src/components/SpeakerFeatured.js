@@ -1,29 +1,59 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
-export default function speakerFeatured({ imgSrc, imgAlt, name, bio }) {
+export default function SpeakerFeatured({
+  name,
+  bio,
+  website,
+  imgSrc,
+  imgAlt,
+}) {
   return (
-    <Container>
-      <img src={imgSrc} alt={imgAlt} />
+    <FeaturedContainer>
+      <a href={website} target="_blank" rel="noopener noreferrer">
+        <Photo src={imgSrc} alt={imgAlt} />
+      </a>
       <div>
-        <h2>{name}</h2>
-        <div dangerouslySetInnerHTML={{ __html: bio }} />
+        <a href={website} target="_blank" rel="noopener noreferrer">
+          <Name>{name}</Name>
+        </a>
+        <Bio dangerouslySetInnerHTML={{ __html: bio }} />
       </div>
-    </Container>
+    </FeaturedContainer>
   );
 }
 
-const Container = styled.div`
+SpeakerFeatured.propTypes = {
+  name: PropTypes.string.isRequired,
+  bio: PropTypes.string.isRequired,
+  website: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
+  imgAlt: PropTypes.string.isRequired,
+};
+
+const FeaturedContainer = styled.div`
   grid-gap: 20px;
   margin: 20px 0;
-  img {
-    border-radius: 20px;
-  }
-  p {
-    margin-bottom: 10px;
-  }
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+`;
+
+const Photo = styled.img`
+  border-radius: 20px;
+`;
+
+const Name = styled.h2`
+  &:hover {
+    color: var(--color-secondary);
+  }
+`;
+
+const Bio = styled.div`
+  p {
+    margin-bottom: 10px;
+    line-height: 1.2;
   }
 `;

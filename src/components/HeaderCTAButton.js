@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 export default function HeaderCTAButton() {
   return (
-    <ATagWrapper href="#">
+    <ATagWrapper href="https://www.eventbrite.com/o/aiga-louisville-846197205">
       <Button>Buy Passport</Button>
     </ATagWrapper>
   );

@@ -1,10 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-
-// import PropTypes from 'prop-types';
-
 import EmailSignupForm from './EmailSignupForm';
-
 import SocialLinks from './SocialLinks';
 
 export default function Footer() {
@@ -50,8 +46,6 @@ export default function Footer() {
     </FooterWrapper>
   );
 }
-
-// Footer.propTypes = {};
 
 const EmailTitle = styled.h3`
   margin-bottom: 20px;

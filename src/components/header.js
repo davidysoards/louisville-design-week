@@ -2,7 +2,6 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect, useCallback } from 'react';
 import styled from '@emotion/styled';
-
 import ToggleSwitch from './ToggleSwitch';
 import SvgAigaLou from './SvgAigaLou';
 import SvgMenuBars from './SvgMenuBars';
@@ -47,7 +46,7 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
       <div className={hasScrolled ? 'header headerScrolled' : 'header'}>
         <Container>
           <MenuButton onClick={handleMenuClick}>
-            <SvgMenuBars hamburger="hamburger" />
+            <SvgMenuBars className="hamburger" />
           </MenuButton>
           <Link to="/">
             <SvgAigaLou className="logo" />
@@ -110,7 +109,9 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  menuLinks: PropTypes.array.isRequired,
+  toggleTheme: PropTypes.func.isRequired,
+  isChecked: PropTypes.bool.isRequired,
 };
 
 const bpMed = '1000px';

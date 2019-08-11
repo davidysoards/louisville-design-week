@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import { graphql } from 'gatsby';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Speaker from '../components/Speaker';
