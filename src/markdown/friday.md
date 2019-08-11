@@ -7,9 +7,9 @@ events:
     endTime: 10:00 am
     title: Creative Mornings
     description:
-    speaker: Dana Tanamachi
-    image: /images/headshot-dana-tanamachi.jpg
-    alt: dana tanamachi headshot
+    # speaker: Dana Tanamachi
+    # image: /images/headshot-dana-tanamachi.jpg
+    # alt: dana tanamachi headshot
     location:
     googleMapUrl:
 

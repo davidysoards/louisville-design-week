@@ -40,14 +40,13 @@ speakers:
       twitter:
       facebook:
       instagram: blountben
-
-  - name: Dana Tanamachi
-    image: /images/headshot-dana-tanamachi.jpg
-    alt: dana tanamachi headshot
-    job: Lettering Artist & Designer
-    website: https://tanamachistudio.com/
-    socialLinks:
-      twitter: dana_tanamachi
-      facebook: tanamachistudio
-      instagram: dana_tanamachi
+  # - name: Dana Tanamachi
+  #   image: /images/headshot-dana-tanamachi.jpg
+  #   alt: dana tanamachi headshot
+  #   job: Lettering Artist & Designer
+  #   website: https://tanamachistudio.com/
+  #   socialLinks:
+  #     twitter: dana_tanamachi
+  #     facebook: tanamachistudio
+  #     instagram: dana_tanamachi
 ---
