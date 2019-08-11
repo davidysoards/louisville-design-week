@@ -14,8 +14,8 @@ Gatsby is an Static-Site-Generator for **React** and uses **GraphQL** to query d
 
 I used @emotion/styled for most of the styling. https://emotion.sh/
 
-## 💫 Deploy
+## 💫 Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/davidysoards/louisville-design-week)
+This site is deployed with Netlify.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
