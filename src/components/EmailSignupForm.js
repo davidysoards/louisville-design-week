@@ -26,7 +26,7 @@ export default function EmailSignupForm() {
         </label>
 
         <label htmlFor="MERGE1">
-          First Name
+          First Name <span className="req asterisk">*</span>
           <input
             type="text"
             name="MERGE1"
@@ -38,7 +38,7 @@ export default function EmailSignupForm() {
         </label>
 
         <label htmlFor="MERGE2">
-          Last Name
+          Last Name <span className="req asterisk">*</span>
           <input
             type="text"
             name="MERGE2"
