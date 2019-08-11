@@ -15,14 +15,7 @@ const typography = new Typography({
       styles: ['400', '700'],
     },
   ],
-  headerFontFamily: [
-    'Karla',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif',
-  ],
-  bodyFontFamily: ['Inconsolata', 'Cooper', 'sans-serif'],
+  headerFontFamily: ['Karla', 'Verdana', 'Geneva', 'sans-serif'],
+  bodyFontFamily: ['Inconsolata', 'Courier New', 'Courier', 'Monospace'],
 });
 export default typography;

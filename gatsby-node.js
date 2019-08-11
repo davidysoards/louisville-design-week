@@ -23,13 +23,16 @@ exports.createPages = ({ graphql, actions }) => {
   // The graphql function call returns a Promise
   return graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/^.+/pages/.+$/" } }
+      ) {
         edges {
           node {
             id
             fields {
               slug
             }
+            fileAbsolutePath
             frontmatter {
               templateKey
             }

@@ -19,7 +19,7 @@ const Container = styled.div`
   img {
     border-radius: 20px;
   }
-  h2 {
+  p {
     margin-bottom: 10px;
   }
   @media screen and (min-width: 768px) {

@@ -38,7 +38,14 @@ h6 {
 }
 
 p {
-  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+@media screen and (min-width: 1000px) {
+  p {
+    font-size: 1em;
+  }
 }
 
 a {
@@ -46,7 +53,7 @@ a {
   color: var(--color-secondary);
 }
 a:hover {
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 img {
@@ -76,4 +83,9 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
+}
+
+menu {
+  padding: 0;
+  margin: 0;
 }

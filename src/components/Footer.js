@@ -21,11 +21,29 @@ export default function Footer() {
             <SocialWrapper>
               <SocialLinks fontSize="2em" />
             </SocialWrapper>
-            <p>
-              This site was built by David Soards with React and Gatsby. It is
-              hosted on Netlify and you can view the source code on GitHub.
-            </p>
-            <p>© {new Date().getFullYear()} AIGA Louisville</p>
+            <FooterText>
+              This site was designed & built by{' '}
+              <a
+                href="https://davidysoards.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                David Soards
+              </a>{' '}
+              with Gatsby, React & GraphQL. It is hosted on Netlify and you can
+              view the source code on{' '}
+              <a
+                href="https://github.com/davidysoards/louisville-design-week"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              .
+            </FooterText>
+            <FooterText>
+              © {new Date().getFullYear()} AIGA Louisville
+            </FooterText>
           </Column2>
         </Columns>
       </Container>
@@ -79,5 +97,13 @@ const Column2 = styled.div`
   @media screen and (min-width: 768px) {
     margin-left: 40px;
     margin-bottom: 20px;
+  }
+`;
+
+const FooterText = styled.p`
+  font-size: 0.7em;
+  line-height: 1.2;
+  @media screen and (min-width: 768px) {
+    font-size: 0.9em;
   }
 `;

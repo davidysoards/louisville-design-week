@@ -11,7 +11,7 @@ import SpeakerFeatured from '../components/SpeakerFeatured';
 
 export default function HomePage({ data }) {
   const { featuredSpeakers } = data.allMarkdownRemark.edges[0].node.frontmatter;
-  console.log(featuredSpeakers);
+  // console.log(featuredSpeakers);
   return (
     <Layout>
       <SEO title="Home" />
@@ -37,7 +37,7 @@ export default function HomePage({ data }) {
           </p>
         </div>
       </Hero>
-      <SectionHeading>Keynote Speaker</SectionHeading>
+      <SectionHeading>Featured Speakers</SectionHeading>
       {featuredSpeakers.map(speaker => (
         <SpeakerFeatured
           imgSrc={speaker.image}

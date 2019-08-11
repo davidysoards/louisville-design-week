@@ -6,7 +6,7 @@ import { ModeContext } from './layout';
 function addIntensity(num) {
   const arr = [];
   while (num) {
-    arr.push(<feMergeNode in="blurred" />);
+    arr.push(<feMergeNode in="blurred" key={num} />);
     num--;
   }
   return arr;

@@ -18,7 +18,7 @@ export default function Events() {
       }
     );
     const events = await res.data.events;
-    console.log(events);
+    // console.log(events);
     return events;
   }
 
@@ -29,60 +29,30 @@ export default function Events() {
     updateMyEvents();
   }, []);
 
-  if (!myEvents) return null;
+  if (!myEvents)
+    return (
+      <div>
+        <p>Check back for the official list of Eventbrite Events.</p>
+      </div>
+    );
 
-  const { name, summary, logo, start, end, venue } = myEvents[0];
   return (
     <>
       <Grid>
-        <EventCard
-          name={name.text}
-          summary={summary}
-          logo={logo.url}
-          start={start.local}
-          end={end.local}
-          venue={venue.name}
-        />
-        <EventCard
-          name={name.text}
-          summary={summary}
-          logo={logo.url}
-          start={start.local}
-          end={end.local}
-          venue={venue.name}
-        />
-        <EventCard
-          name={name.text}
-          summary={summary}
-          logo={logo.url}
-          start={start.local}
-          end={end.local}
-          venue={venue.name}
-        />
-        <EventCard
-          name={name.text}
-          summary={summary}
-          logo={logo.url}
-          start={start.local}
-          end={end.local}
-          venue={venue.name}
-        />
-        <EventCard
-          name={name.text}
-          summary={summary}
-          logo={logo.url}
-          start={start.local}
-          end={end.local}
-          venue={venue.name}
-        />
-        <EventCard
-          name={name.text}
-          summary={summary}
-          logo={logo.url}
-          start={start.local}
-          end={end.local}
-          venue={venue.name}
-        />
+        {myEvents.map(event => {
+          const { name, summary, logo, start, end, venue } = event;
+          return (
+            <EventCard
+              name={name.text}
+              summary={summary}
+              logo={logo.url}
+              start={start.local}
+              end={end.local}
+              venue={venue.name}
+              key={name.text}
+            />
+          );
+        })}
       </Grid>
     </>
   );

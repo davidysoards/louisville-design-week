@@ -7,6 +7,7 @@ import ToggleSwitch from './ToggleSwitch';
 import SvgAigaLou from './SvgAigaLou';
 import SvgMenuBars from './SvgMenuBars';
 import SocialLinks from './SocialLinks';
+import HeaderCTAButton from './HeaderCTAButton';
 
 export default function Header({ menuLinks, toggleTheme, isChecked }) {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -53,9 +54,7 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
           </Link>
           <MenuWrapper>
             <NavDesktop>
-              <a href="#">
-                <Button>Buy Passport</Button>
-              </a>
+              <HeaderCTAButton />
               {menuLinks.map(link => (
                 <Link
                   to={link.link}
@@ -84,9 +83,7 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
         >
           <NavMobileContainer ref={measuredRef}>
             <Row>
-              <a href="#">
-                <Button>Buy Passport</Button>
-              </a>
+              <HeaderCTAButton />
             </Row>
             {menuLinks.map(link => (
               <Row key={link.name}>
@@ -218,24 +215,5 @@ const Label = styled.label`
       font-size: 0.7em;
       margin-left: 10px;
     }
-  }
-`;
-
-const Button = styled.button`
-  padding: 8px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background: var(--color-secondary);
-  border: none;
-  color: var(--color-header-bg);
-  cursor: pointer;
-  transition: box-shadow 0.3s, color 0.5s, transform 0.2s ease-out;
-  &:hover {
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.6);
-    transform: translate3d(0, -2px, 0);
-    color: white;
   }
 `;

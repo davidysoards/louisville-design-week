@@ -1,46 +1,138 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { Link } from 'gatsby';
 import styled from '@emotion/styled';
-
-// import gailycurl from '../images/gail-anderson-headshot.jpg';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import ScheduleRow from '../components/ScheduleRow';
 
-export default function SchedulePage() {
+export default function SchedulePage({ data }) {
+  const [daySelectIndex, setDaySelectIndex] = useState(0);
+
+  // console.log(data);
+  const days = data.allMarkdownRemark.edges;
   return (
     <Layout>
-      <SEO title="Speakers" />
-      <Hero>
-        <HeroContainer>
-          <h1>Speakers</h1>
-        </HeroContainer>
-      </Hero>
-      <ScheduleContainer></ScheduleContainer>
+      <SEO title="Schedule" />
+      <PageTitle>Schedule</PageTitle>
+      <ScheduleMenu>
+        {days.map((edge, index) => {
+          const { dayOfWeek } = edge.node.frontmatter;
+          return (
+            <MenuButton
+              key={dayOfWeek}
+              onClick={() => setDaySelectIndex(index)}
+              className={daySelectIndex === index ? 'active' : ''}
+            >
+              {dayOfWeek}
+            </MenuButton>
+          );
+        })}
+      </ScheduleMenu>
+      <ScheduleContainer>
+        {days[daySelectIndex].node.frontmatter.events.map(event => {
+          const {
+            startTime,
+            endTime,
+            title,
+            description,
+            location,
+            googleMapUrl,
+            image,
+            alt,
+          } = event;
+          return (
+            <ScheduleRow
+              startTime={startTime}
+              endTime={endTime}
+              title={title}
+              description={description}
+              location={location}
+              googleMapUrl={googleMapUrl}
+              imgSrc={image}
+              imgAlt={alt}
+              key={title}
+            />
+          );
+        })}
+      </ScheduleContainer>
     </Layout>
   );
 }
 
-const Hero = styled.div`
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+const PageTitle = styled.h1`
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 10px;
+  font-size: 2em;
+  @media screen and (min-width: 700px) {
+    font-size: 3em;
+  }
+  @media screen and (min-width: 1000px) {
+    text-align: left;
+    margin-top: 84px;
+  }
 `;
 
-const HeroContainer = styled.div`
-  margin-top: 64px;
-  padding: 10px;
-  justify-content: flex-start;
-  h1 {
-    font-size: 2em;
-    @media screen and (min-width: 1024px) {
-      font-size: 3em;
-    }
+const ScheduleMenu = styled.menu`
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  @media screen and (min-width: 700px) {
+    grid-template-columns: repeat(6, auto);
+  }
+`;
+
+const MenuButton = styled.menu`
+  padding: 5px;
+  margin: 2px;
+  background: var(--color-secondary);
+  color: var(--color-bg);
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  transition: box-shadow 0.2s, color 0.3s, transform 0.1s ease-out;
+  &:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.6);
+    transform: translate3d(0, -2px, 0);
+    color: white;
+  }
+  &.active {
+    background: var(--color-primary);
   }
 `;
 
 const ScheduleContainer = styled.div`
-  max-width: 1200px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 10px;
+`;
+
+export const query = graphql`
+  query scheduleQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "day-schedule" } } }
+      sort: { fields: frontmatter___dayIndex }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            templateKey
+            dayIndex
+            dayOfWeek
+            events {
+              startTime
+              endTime
+              title
+              location
+              googleMapUrl
+              image
+              alt
+            }
+          }
+        }
+      }
+    }
+  }
 `;
