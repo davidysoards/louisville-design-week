@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { graphql } from 'gatsby';
@@ -9,7 +9,10 @@ import ScheduleRow from '../components/ScheduleRow';
 export default function SchedulePage({ data }) {
   const [daySelectIndex, setDaySelectIndex] = useState(0);
 
-  console.log(data);
+  useEffect(() => {
+    console.log(days[daySelectIndex].node.frontmatter.events);
+  }, [daySelectIndex]);
+
   const days = data.allMarkdownRemark.edges;
   return (
     <Layout>

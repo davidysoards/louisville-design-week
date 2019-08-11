@@ -22,7 +22,7 @@ featuredSpeakers:
     image: /images/headshot-kate-bingaman-burt.jpg
     alt: kate bingaman-burt headshot
     job: Illustrator & Educator
-    website: https://katebingamanburt.com/
+    website: http://katebingamanburt.com/
     socialLinks:
       twitter: katebingburt
       facebook: katebingburt

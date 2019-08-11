@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 export default function Speaker({ imgSrc, imgAlt, name, job, website }) {
   return (
     <Container>
-      <a href={website}>
+      <a href={website} target="_blank" rel="noopener noreferrer">
         <img src={imgSrc} alt={imgAlt} />
         <div>
           <Name>{name}</Name>
