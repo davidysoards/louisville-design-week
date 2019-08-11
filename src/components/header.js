@@ -58,7 +58,9 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
               {menuLinks.map(link => (
                 <Link
                   to={link.link}
-                  activeStyle={{ color: 'var(--color-secondary)' }}
+                  activeStyle={{
+                    borderBottom: '2px solid var(--color-primary)',
+                  }}
                   key={link.name}
                 >
                   {link.name}
@@ -89,7 +91,9 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
               <Row key={link.name}>
                 <Link
                   to={link.link}
-                  activeStyle={{ color: 'var(--color-secondary)' }}
+                  activeStyle={{
+                    borderBottom: '2px solid var(--color-primary)',
+                  }}
                 >
                   {link.name}
                 </Link>

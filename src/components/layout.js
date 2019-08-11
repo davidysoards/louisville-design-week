@@ -75,7 +75,7 @@ export default function Layout({ children }) {
   `);
 
   return (
-    <>
+    <div className="site">
       <ModeContext.Provider value={currentMode}>
         <Header
           siteTitle={data.site.siteMetadata.title}
@@ -86,7 +86,7 @@ export default function Layout({ children }) {
         <main>{children}</main>
         <Footer />
       </ModeContext.Provider>
-    </>
+    </div>
   );
 }
 

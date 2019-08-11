@@ -66,7 +66,7 @@ const SocialWrapper = styled.h3`
   margin: 20px 0;
 `;
 
-const FooterWrapper = styled.div`
+const FooterWrapper = styled.footer`
   background: var(--color-header-bg);
   margin-top: 30px;
 `;
