@@ -10,9 +10,9 @@ import SvgAlwaysOpen from '../components/SvgAlwaysOpen';
 import SpeakerFeatured from '../components/SpeakerFeatured';
 
 export default function HomePage({ data }) {
+  // console.log(data);
   const { node } = data.allMarkdownRemark.edges[0];
   const { featuredSpeakers } = data.allMarkdownRemark.edges[0].node.frontmatter;
-  // console.log(data);
   return (
     <Layout>
       <SEO title="Home" />

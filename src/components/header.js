@@ -16,10 +16,10 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
   const handleScroll = e => {
     const scrollTop = window.pageYOffset;
     if (scrollTop > 50) {
-      console.log('over 50');
+      // console.log('over 50');
       setHasScrolled(true);
     } else {
-      console.log('under 50');
+      // console.log('under 50');
       setHasScrolled(false);
     }
   };
