@@ -27,11 +27,10 @@ featuredSpeakers:
       twitter: katebingburt
       facebook: katebingburt
       instagram: katebingburt
-    bio: "<p>Kate Bingaman-Burt mostly draws, letters, documents, and collects, but she also does a lot of other things that involve energy, conversation, and exchange. Kate makes illustrations for all sorts of clients all around the world, and she is an Associate Professor of Graphic Design at Portland State University. Kate owns Outlet which hosts workshops, pop-up events and a risograph print studio. She also sits on the board of Design Portland.</p><p>Her clients include: Dolby, Airbnb, Chipotle, Car2Go, Google, IDEO, Hallmark, Poketo, Etsy, New York Times, Creative Mornings, Museum of Modern Art, Travel & Leisure, Oprah, Vh1, Girl Scouts of America, Gap, Municipal Winemakers, Real Simple, Target, Expedia, Microsoft, Princeton Architectural Press, Sasquatch Books, Webby Awards, Nature's Path, Newsweek, Pinball Publishing, The Morning News and more.</p>"
-
+    bio: "<p>Kate Bingaman-Burt mostly draws, letters, documents, and collects, but she also does a lot of other things that involve energy, conversation, and exchange. She is a Professor of Graphic Design at Portland State University and makes illustrations for all sorts of clients all around the world. Past clients include Pinterest, Airbnb, Hillary for America, Google, IDEO, Etsy, The New York Times, Creative Mornings, Museum of Modern Art, and Girl Scouts of America.</p><p>Her roles as commercial illustrator, full-time educator, and project-based artist overlap to inform an intricate creative work flow. Kate’s studio is located in Outlet, her project space in Portland, Oregon. She owns Outlet, which hosts workshops, pop-up events and a community risograph print studio and zine library. She also sits on the board of Design Portland and has been scheming with them since 2012.</p>"
 ---
 
-Design is, at it’s best, the convergence of a universal source of
+Design is, at its best, the convergence of a universal source of
 creativity. It doesn’t depend on any of the barriers or segregations
 that humans both consciously and subconsciously impose upon
 themselves. It requires that we be open and accepting. The convergence

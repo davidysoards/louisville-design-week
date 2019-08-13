@@ -10,8 +10,9 @@ import SvgAlwaysOpen from '../components/SvgAlwaysOpen';
 import SpeakerFeatured from '../components/SpeakerFeatured';
 
 export default function HomePage({ data }) {
+  const { node } = data.allMarkdownRemark.edges[0];
   const { featuredSpeakers } = data.allMarkdownRemark.edges[0].node.frontmatter;
-  // console.log(featuredSpeakers);
+  // console.log(data);
   return (
     <Layout>
       <SEO title="Home" />
@@ -20,21 +21,9 @@ export default function HomePage({ data }) {
           <SvgAlwaysOpen width="100%" intensity={4} blur={20} />
         </SvgWrapper>
         <div>
-          <Heading>Louisville Design Week</Heading>
-          <SubHeading>September 9th - 14th, 2019</SubHeading>
-          <p>
-            Design is, at it’s best, the convergence of a universal source of
-            creativity. It doesn’t depend on any of the barriers or segregations
-            that humans both consciously and subconsciously impose upon
-            themselves. It requires that we be open and accepting. The
-            convergence is something not only aesthetically beautiful, but also
-            accessible to the greatest extent possible by everyone regardless of
-            age, race, gender, ability or status.
-          </p>
-          <p>
-            This is design that belongs to everyone. Design that unites us. It
-            is ALWAYS OPEN.
-          </p>
+          <Heading>{node.frontmatter.headline}</Heading>
+          <SubHeading>{node.frontmatter.subheadline}</SubHeading>
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
         </div>
       </Hero>
       <SectionHeading>Featured Speakers</SectionHeading>
@@ -61,7 +50,10 @@ export const query = graphql`
     ) {
       edges {
         node {
+          html
           frontmatter {
+            headline
+            subHeadline
             featuredSpeakers {
               name
               bio
