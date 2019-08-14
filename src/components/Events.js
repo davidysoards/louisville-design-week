@@ -5,6 +5,7 @@ import EventCard from './EventCard';
 
 export default function Events() {
   const [myEvents, setMyEvents] = useState();
+  const [isLoading, setIsLoading] = useState(false);
 
   async function fetchEvents() {
     const res = await axios.get(
@@ -14,20 +15,30 @@ export default function Events() {
           token: `${process.env.GATSBY_EB_TOKEN}`,
           'organizer.id': '846197205',
           expand: 'venue',
+          q: 'design+week',
+          sort_by: 'date',
         },
       }
     );
     const events = await res.data.events;
-    // console.log(events);
     return events;
   }
 
   useEffect(() => {
+    setIsLoading(true);
     async function updateMyEvents() {
       setMyEvents(await fetchEvents());
     }
     updateMyEvents();
+    setIsLoading(false);
   }, []);
+
+  if (isLoading)
+    return (
+      <div>
+        <p>Loading ...</p>
+      </div>
+    );
 
   if (!myEvents)
     return (
@@ -45,7 +56,7 @@ export default function Events() {
             <EventCard
               name={name.text}
               summary={summary}
-              logo={logo.url}
+              logo={logo ? logo.url : undefined}
               start={start.local}
               end={end.local}
               venue={venue.name}
