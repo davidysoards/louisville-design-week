@@ -123,7 +123,7 @@ const HeaderNav = styled.header`
     width: 100%;
     z-index: 99;
     padding: 0;
-    transition: background 0.8s, color 0.5s, padding 0.3s ease-out;
+    transition: background 0.8s, color 0.3s, padding 0.3s ease-out;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     @media screen and (min-width: ${bpMed}) {
       background: none;
@@ -132,11 +132,18 @@ const HeaderNav = styled.header`
     }
     a {
       color: var(--color-primary);
+      &:hover {
+        color: var(--color-secondary);
+        opacity: 1;
+      }
     }
     .logo {
       fill: var(--color-primary);
       transition: fill 0.5s;
       height: 32px;
+      &:hover {
+        fill: var(--color-secondary);
+      }
       @media screen and (min-width: ${bpMed}) {
         height: 40px;
       }

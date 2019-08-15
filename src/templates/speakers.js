@@ -13,18 +13,18 @@ export default function SpeakersPage({ data }) {
     <Layout>
       <SEO title="Speakers" />
       <PageTitle>Speakers</PageTitle>
-      <SpeakerGrid>
-        {speakers.map(speaker => (
-          <Speaker
-            imgSrc={speaker.image}
-            imgAlt={speaker.alt}
-            name={speaker.name}
-            job={speaker.job}
-            website={speaker.website}
-            key={speaker.name}
-          />
-        ))}
-      </SpeakerGrid>
+      {speakers.map(speaker => (
+        <Speaker
+          name={speaker.name}
+          keynote={speaker.keynote}
+          imgSrc={speaker.image}
+          imgAlt={speaker.alt}
+          bio={speaker.bio}
+          job={speaker.job}
+          website={speaker.website}
+          key={speaker.name}
+        />
+      ))}
     </Layout>
   );
 }
@@ -32,7 +32,7 @@ export default function SpeakersPage({ data }) {
 const PageTitle = styled.h1`
   text-align: center;
   margin-top: 64px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 2em;
   @media screen and (min-width: 700px) {
     font-size: 3em;
@@ -40,16 +40,6 @@ const PageTitle = styled.h1`
   @media screen and (min-width: 1000px) {
     text-align: left;
     margin-top: 84px;
-  }
-`;
-
-const SpeakerGrid = styled.div`
-  @media screen and (min-width: 700px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  @media screen and (min-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 `;
 
@@ -62,8 +52,10 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         speakers {
-          image
           name
+          keynote
+          image
+          bio
           alt
           job
           website

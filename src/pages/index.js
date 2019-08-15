@@ -7,12 +7,13 @@ import SEO from '../components/seo';
 
 import Events from '../components/Events';
 import SvgAlwaysOpen from '../components/SvgAlwaysOpen';
-import SpeakerFeatured from '../components/SpeakerFeatured';
+// import FeaturedSpeaker from '../components/FeaturedSpeaker';
+import Featured from '../components/Featured';
 
 export default function HomePage({ data }) {
-  // console.log(data);
+  console.log(data);
   const { node } = data.allMarkdownRemark.edges[0];
-  const { featuredSpeakers } = data.allMarkdownRemark.edges[0].node.frontmatter;
+  console.log(node.frontmatter.subheadline);
   return (
     <Layout>
       <SEO title="Home" />
@@ -22,21 +23,12 @@ export default function HomePage({ data }) {
         </SvgWrapper>
         <div>
           <Heading>{node.frontmatter.headline}</Heading>
-          <SubHeading>{node.frontmatter.subheadline}</SubHeading>
+          <SubHeading>{node.frontmatter.subHeadline}</SubHeading>
           <div dangerouslySetInnerHTML={{ __html: node.html }} />
         </div>
       </Hero>
       <SectionHeading>Featured Speakers</SectionHeading>
-      {featuredSpeakers.map(speaker => (
-        <SpeakerFeatured
-          name={speaker.name}
-          bio={speaker.bio}
-          website={speaker.website}
-          imgSrc={speaker.image}
-          imgAlt={speaker.alt}
-          key={speaker.name}
-        />
-      ))}
+      <Featured />
       <SectionHeading>Upcoming Events</SectionHeading>
       <Events />
     </Layout>
@@ -54,13 +46,6 @@ export const query = graphql`
           frontmatter {
             headline
             subHeadline
-            featuredSpeakers {
-              name
-              bio
-              website
-              image
-              alt
-            }
           }
         }
       }
@@ -72,7 +57,7 @@ const Hero = styled.div`
   max-width: 720px;
   margin: 80px auto 20px;
   p {
-    line-height: 1.4;
+    line-height: 1.3;
   }
   @media screen and (min-width: 1024px) {
     max-width: 1200px;
@@ -105,9 +90,7 @@ const SectionHeading = styled.h2`
   font-size: 1.6em;
   text-transform: uppercase;
   margin: 40px 0 10px;
-  text-align: center;
   @media screen and (min-width: 768px) {
-    text-align: left;
     font-size: 2em;
   }
   @media screen and (min-width: 1024px) {

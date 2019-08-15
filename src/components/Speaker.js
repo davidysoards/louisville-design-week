@@ -2,43 +2,81 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
-export default function Speaker({ imgSrc, imgAlt, name, job, website }) {
+export default function Speaker({
+  name,
+  bio,
+  job,
+  website,
+  imgSrc,
+  imgAlt,
+  keynote,
+}) {
   return (
-    <Container>
+    <FeaturedContainer>
       <a href={website} target="_blank" rel="noopener noreferrer">
-        <img src={imgSrc} alt={imgAlt} />
-        <div>
-          <Name>{name}</Name>
-          <Job>{job}</Job>
-        </div>
+        <Photo src={imgSrc} alt={imgAlt} />
       </a>
-    </Container>
+      <div>
+        <NameWrapper>
+          <a href={website} target="_blank" rel="noopener noreferrer">
+            <Name>{name}</Name>
+          </a>
+          {keynote && <Keynote>KEYNOTE SPEAKER</Keynote>}
+        </NameWrapper>
+        <Job>{job}</Job>
+        <Bio dangerouslySetInnerHTML={{ __html: bio }} />
+      </div>
+    </FeaturedContainer>
   );
 }
 
 Speaker.propTypes = {
   name: PropTypes.string.isRequired,
-  job: PropTypes.string.isRequired,
+  bio: PropTypes.string.isRequired,
   website: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
 };
 
-const Container = styled.div`
-  margin: 0 auto;
-  padding: 10px;
-  width: 270px;
-  text-align: center;
-  img {
-    border-radius: 100%;
-    margin: 0 auto 5px;
+const FeaturedContainer = styled.div`
+  grid-gap: 20px;
+  margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 `;
 
-const Name = styled.h3`
-  font-size: 1.25em;
+const Photo = styled.img`
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 0 auto;
 `;
-const Job = styled.p`
-  font-size: 0.9em;
-  line-height: 1.2;
+
+const NameWrapper = styled.div`
+  display: flex;
+`;
+
+const Name = styled.h2`
+  &:hover {
+    color: var(--color-secondary);
+  }
+`;
+
+const Keynote = styled.p`
+  /* line-height: 1.2; */
+  font-weight: 700;
+  margin-left: 0.5em;
+`;
+
+const Job = styled.h3`
+  font-size: 1em;
+`;
+
+const Bio = styled.div`
+  p {
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-size: 0.9em;
+  }
 `;
