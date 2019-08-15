@@ -5,8 +5,8 @@ dayOfWeek: Saturday
 events:
   - startTime: 11:00 am
     endTime: 2:00 pm
-    title: Family-friendly BBQ/Cookout
+    title: Picnic and Closing Party
     description:
-    location: Olmstead Park
-    googleMapUrl: https://www.google.com/maps/place/Olmsted+Parks+Conservancy/@38.20908,-85.7058934,15z/data=!4m2!3m1!1s0x0:0x1a8db7bfd2315432?sa=X&ved=2ahUKEwjU8PPS4ffjAhVGiqwKHUI7DqoQ_BIwFHoECAkQCA
+    location: Cherokee Park Barringer Hill Pavilion (A.K.A. Dog Hill)
+    googleMapUrl: https://www.google.com/maps/place/Barringer+Hill/@38.239336,-85.7026794,17z/data=!4m12!1m6!2m5!1sBarringer+Hill+Pavilion!5m3!5m2!4m1!1i2!3m4!1s0x8869734b30b057e7:0x21bd14541679354b!8m2!3d38.2386981!4d-85.7016152
 ---

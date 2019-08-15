@@ -55,11 +55,11 @@ export default function Events() {
           return (
             <EventCard
               name={name.text}
-              summary={summary}
-              logo={logo ? logo.url : undefined}
+              summary={summary ? summary : null}
+              logo={logo ? logo.url : null}
               start={start.local}
               end={end.local}
-              venue={venue.name}
+              venue={venue ? venue.name : null}
               key={name.text}
             />
           );

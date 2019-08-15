@@ -14,6 +14,7 @@ export default function SchedulePage({ data }) {
   }, [daySelectIndex]);
 
   const days = data.allMarkdownRemark.edges;
+  console.log(days);
   return (
     <Layout>
       <SEO title="Schedule" />
@@ -131,6 +132,7 @@ export const query = graphql`
               startTime
               endTime
               title
+              description
               location
               googleMapUrl
               image
