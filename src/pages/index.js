@@ -7,13 +7,11 @@ import SEO from '../components/seo';
 
 import Events from '../components/Events';
 import SvgAlwaysOpen from '../components/SvgAlwaysOpen';
-// import FeaturedSpeaker from '../components/FeaturedSpeaker';
 import Featured from '../components/Featured';
 
 export default function HomePage({ data }) {
-  console.log(data);
+  // console.log(data);
   const { node } = data.allMarkdownRemark.edges[0];
-  console.log(node.frontmatter.subheadline);
   return (
     <Layout>
       <SEO title="Home" />

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { useStaticQuery, graphql } from 'gatsby';
+import shuffle from '../utils/shuffle';
 import FeaturedSpeaker from '../components/FeaturedSpeaker';
 
 export default function Featured() {
@@ -29,17 +30,19 @@ export default function Featured() {
   const { speakers } = data.allMarkdownRemark.edges[0].node.frontmatter;
   return (
     <SpeakerGrid>
-      {speakers.map(speaker => (
-        <FeaturedSpeaker
-          name={speaker.name}
-          keynote={speaker.keynote}
-          job={speaker.job}
-          website={speaker.website}
-          imgSrc={speaker.image}
-          imgAlt={speaker.alt}
-          key={speaker.name}
-        />
-      ))}
+      {shuffle(
+        speakers.map(speaker => (
+          <FeaturedSpeaker
+            name={speaker.name}
+            keynote={speaker.keynote}
+            job={speaker.job}
+            website={speaker.website}
+            imgSrc={speaker.image}
+            imgAlt={speaker.alt}
+            key={speaker.name}
+          />
+        ))
+      )}
     </SpeakerGrid>
   );
 }

@@ -52,6 +52,8 @@ events:
     title: Jeremiah Chiu
     description:
     speaker: Jeremiah Chiu
+    image: /images/headshot-jeremiah-chiu.jpg
+    alt: jeremiah chiu headshot
     location: The Green Building
     googleMapUrl: https://www.google.com/maps/place/The+Green+Building+Gallery/@38.2531311,-85.7409124,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4540d0bbb:0xc2c0dbc60d495f14!8m2!3d38.2531269!4d-85.7387237
 
@@ -59,7 +61,9 @@ events:
     endTime: 11:00 pm
     title: Jeremiah Chiu After Party
     description:
-    speaker:
+    speaker: Jeremiah Chiu
+    image: /images/headshot-jeremiah-chiu.jpg
+    alt: jeremiah chiu headshot
     location: Galaxie Bar
     googleMapUrl: https://www.google.com/maps/place/Galaxie/@38.2531087,-85.740866,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4540d0bbb:0xe7a561065a1c7915!8m2!3d38.2531045!4d-85.7386773
 ---

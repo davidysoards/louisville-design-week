@@ -9,12 +9,8 @@ import ScheduleRow from '../components/ScheduleRow';
 export default function SchedulePage({ data }) {
   const [daySelectIndex, setDaySelectIndex] = useState(0);
 
-  useEffect(() => {
-    console.log(days[daySelectIndex].node.frontmatter.events);
-  }, [daySelectIndex]);
-
   const days = data.allMarkdownRemark.edges;
-  console.log(days);
+
   return (
     <Layout>
       <SEO title="Schedule" />

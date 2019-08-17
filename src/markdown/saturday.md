@@ -7,6 +7,6 @@ events:
     endTime: 2:00 pm
     title: Picnic and Closing Party
     description:
-    location: Cherokee Park Barringer Hill Pavilion (A.K.A. Dog Hill)
+    location: Cherokee Park Barringer Hill Pavilion (Dog Hill)
     googleMapUrl: https://www.google.com/maps/place/Barringer+Hill/@38.239336,-85.7026794,17z/data=!4m12!1m6!2m5!1sBarringer+Hill+Pavilion!5m3!5m2!4m1!1i2!3m4!1s0x8869734b30b057e7:0x21bd14541679354b!8m2!3d38.2386981!4d-85.7016152
 ---

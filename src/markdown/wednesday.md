@@ -28,15 +28,15 @@ events:
     speaker: Kate Bingaman-Burt
     image: /images/headshot-kate-bingaman-burt.jpg
     alt: kate bingaman-burt headshot
-    location: 715 West Main Street
-    googleMapUrl: https://www.google.com/maps/place/715+W+Main+St,+Louisville,+KY+40202/@38.2578296,-85.7623573,18.93z/data=!4m13!1m7!3m6!1s0x886972a167b96129:0x62366df9e7166b67!2s715+W+Main+St,+Louisville,+KY+40202!3b1!8m2!3d38.2575241!4d-85.7621387!3m4!1s0x886972a167b96129:0x62366df9e7166b67!8m2!3d38.2575241!4d-85.7621387
+    location: KMAC Museum
+    googleMapUrl: https://www.google.com/maps/place/KMAC+Museum/@38.257524,-85.762142,15z/data=!4m5!3m4!1s0x0:0x56ad8074ec0badc3!8m2!3d38.257524!4d-85.762142
 
   - startTime: 4:00 pm
     endTime: 6:00 pm
-    title: Beer Package Design
+    title: Beer Package Design w/Jess Fey
     description:
     speaker:
-    location: Store Front
+    location: Always Open Storefront
     googleMapUrl: https://www.google.com/maps/place/827+E+Market+St,+Louisville,+KY+40206/@38.2535377,-85.7389026,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4c43512af:0x4a596a5908153b94!8m2!3d38.2535335!4d-85.7367139
 
   - startTime: 7:00 pm
@@ -51,7 +51,7 @@ events:
 
   - startTime: 9:00 pm
     endTime: 11:00 pm
-    title: "Louisville's First Ever Spelling Bee!"
+    title: "Louisville's First Spelling Bee!"
     description:
     speaker:
     image:

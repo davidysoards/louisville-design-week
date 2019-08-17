@@ -21,6 +21,7 @@ export default function Events() {
       }
     );
     const events = await res.data.events;
+    // console.log(events);
     return events;
   }
 
@@ -51,15 +52,15 @@ export default function Events() {
     <>
       <Grid>
         {myEvents.map(event => {
-          const { name, summary, logo, start, end, venue } = event;
+          const { name, logo, start, end, venue, url } = event;
           return (
             <EventCard
               name={name.text}
-              summary={summary ? summary : null}
               logo={logo ? logo.url : null}
               start={start.local}
               end={end.local}
               venue={venue ? venue.name : null}
+              url={url}
               key={name.text}
             />
           );

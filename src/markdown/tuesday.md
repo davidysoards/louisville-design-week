@@ -46,5 +46,5 @@ events:
     image: /images/headshot-kate-bingaman-burt.jpg
     alt: kate bingaman-burt headshot
     location: Story Louisville
-    googleMapUrl: https://www.google.com/maps/place/Story/@38.252946,-85.737678,15z/data=!4m5!3m4!1s0x0:0xdd26101c52f460b8!8m2!3d38.252946!4d-85.737678
+    googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
 ---

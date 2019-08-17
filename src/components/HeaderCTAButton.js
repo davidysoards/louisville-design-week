@@ -8,7 +8,7 @@ export default function HeaderCTAButton() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Button>Buy Passport</Button>
+      <Button>Buy Passports</Button>
     </ATagWrapper>
   );
 }

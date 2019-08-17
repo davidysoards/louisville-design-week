@@ -33,7 +33,7 @@ speakers:
       twitter: danbarczak
       facebook: dan.barczak
       instagram: danbarczak
-    bio: '<p>Dan Barczak is co-owner and Chief Creative Officer of Hyperquake in Cincinnati, where he spends most of his time relentlessly pursuing ways to evolve and grow businesses on a human level, and help visionary leaders in the midst of a shift – whether they’re a startup or a global giant. He’s been obsessed with what a brand is and the impact it can have on people since he was a kid, and has been building them for the last 20 years, guided by the notion that the truth rises above everything. He’s a lifelong designer, loyal husband to his high school sweetheart, father of two amazing boys, and lives in Northern Kentucky where he grew up. Above all, Dan believes in making an honest living, and adding value to the world we get to be a part of.</p>'
+    bio: '<p>Dan Barczak is co-owner and Chief Creative Officer of Hyperquake in Cincinnati, where he spends most of his time relentlessly pursuing ways to evolve and grow businesses on a human level, and help visionary leaders in the midst of a shift – whether they’re a startup or a global giant. He’s been obsessed with what a brand is and the impact it can have on people since he was a kid, and has been building them for the last 20 years, guided by the notion that the truth rises above everything. He’s a lifelong designer, loyal husband to his high school sweetheart, father of two amazing boys, and lives in Northern Kentucky where he grew up.</p><p>Above all, Dan believes in making an honest living, and adding value to the world we get to be a part of.</p>'
 
   - name: Ben Blount
     image: /images/headshot-ben-blount.jpg
@@ -44,15 +44,38 @@ speakers:
       twitter:
       facebook:
       instagram: blountben
-    bio: '<p>Ben Blount was born and raised in Detroit. He is a designer and letterpress printer who loves books, type, and putting ink on paper. His work often explores questions of race, identity, and the stories we tell ourselves about living in America. Ben is a believer in the power of the printed word and has traveled throughout the US teaching and speaking about design, letterpress, and making things that matter. Ben learned a lot about design at Washington University in St. Louis, a lot about printing at Columbia College Chicago, and filled in the gaps with mentors and lots of practice. He currently prints out of his storefront studio in Evanston, IL.</p>'
-  # - name: Dana Tanamachi
-  #   image: /images/headshot-dana-tanamachi.jpg
-  #   alt: dana tanamachi headshot
-  #   job: Lettering Artist & Designer
-  #   website: https://tanamachistudio.com/
-  #   socialLinks:
-  #     twitter: dana_tanamachi
-  #     facebook: tanamachistudio
-  #     instagram: dana_tanamachi
-  #   bio: '<p>Dana Tanamachi is a New York City-based lettering artist and designer who enjoys living a quiet life and working with her hands. In 2009, an impromptu chalk installation for a Brooklyn housewarming party landed Dana her first commission for Google and set the popular chalk-lettering trend—and her career—in motion. After working under design icon Louise Fili, she opened Tanamachi Studio, a boutique design studio specializing in custom typography and illustration for editorial, lifestyle, food, and fashion brands. She has been commissioned globally by clients such as Target, Nike, USPS, Penguin Books, Ralph Lauren, Instagram, and West Elm. Named a Young Gun (YG9) by the Art Director’s Club in 2011 and a Young Creative to Watch by HOW Magazine, she has had the distinct honor of creating custom cover art for O, HOW, and TIME Magazines.</p>'
+    bio: '<p>Ben Blount was born and raised in Detroit. He is a designer and letterpress printer who loves books, type, and putting ink on paper. His work often explores questions of race, identity, and the stories we tell ourselves about living in America. Ben is a believer in the power of the printed word and has traveled throughout the US teaching and speaking about design, letterpress, and making things that matter. Ben learned a lot about design at Washington University in St. Louis, a lot about printing at Columbia College Chicago, and filled in the gaps with mentors and lots of practice.</p><p>He currently prints out of his storefront studio in Evanston, IL.</p>'
+
+  - name: Dana Tanamachi
+    image: /images/headshot-dana-tanamachi.jpg
+    alt: dana tanamachi headshot
+    job: Lettering Artist & Designer
+    website: https://tanamachistudio.com/
+    socialLinks:
+      twitter: dana_tanamachi
+      facebook: tanamachistudio
+      instagram: dana_tanamachi
+    bio: '<p>Dana Tanamachi is a New York City-based lettering artist and designer who enjoys living a quiet life and working with her hands. In 2009, an impromptu chalk installation for a Brooklyn housewarming party landed Dana her first commission for Google and set the popular chalk-lettering trend—and her career—in motion. After working under design icon Louise Fili, she opened Tanamachi Studio, a boutique design studio specializing in custom typography and illustration for editorial, lifestyle, food, and fashion brands.</p><p>She has been commissioned globally by clients such as Target, Nike, USPS, Penguin Books, Ralph Lauren, Instagram, and West Elm. Named a Young Gun (YG9) by the Art Director’s Club in 2011 and a Young Creative to Watch by HOW Magazine, she has had the distinct honor of creating custom cover art for O, HOW, and TIME Magazines.</p>'
+
+  - name: Ciara Leroy
+    image: /images/headshot-ciara-leroy.jpg
+    alt: ciara leroy headshot
+    job: Multi-disciplinary Handicraft Artist
+    website: http://www.prettystrange.design/
+    socialLinks:
+      twitter:
+      facebook:
+      instagram: prettystrangedesign
+    bio: '<p>Ciara LeRoy founded Pretty Strange Design as a guide to beautiful things and beautiful stories. Her talents include lettering, embroidery, fashion design, illustration, calligraphy. She helps people create things that are stunning, but also, just a little peculiar. Pretty Strange is based in the philosophy of creating art that is within reach, and uniting imagination with the everyday.</p><p>&ldquo;Every once in a while, you stumble across something so offbeat, it’s beautiful. I was once told &lsquo;pretty&rsquo; and &lsquo;strange&rsquo; was the best way to describe me, and it’s also the best summation of the things I create. Whimsical, odd, and a little perplexing, but also detailed, refined and elegant.&rdquo;</p>'
+
+  - name: Jeremiah Chiu
+    image: /images/headshot-jeremiah-chiu.jpg
+    alt: jeremiah chiu headshot
+    job: Artist, Musician & Designer
+    website: http://jeremiahchiu.com/
+    socialLinks:
+      twitter:
+      facebook:
+      instagram: some_all_none
+    bio: '<p>As owner and Creative Director of Plural, now Studio Chew, Jeremiah Chiu has spent the last 10 years consulting and creating award-winning brand strategies and identity systems for cultural institutions and major corporations alike. Clients include Google, Steelcase, the Art Institute of Chicago, University of Chicago, Museum of Contemporary Art Los Angeles, McDonalds, VSA Partners, and more.</p><p>Additionally, Jeremiah continues an active career as an artist and musician.</p>'
 ---
