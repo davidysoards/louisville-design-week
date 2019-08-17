@@ -28,6 +28,8 @@ export default function Featured() {
     }
   `);
   const { speakers } = data.allMarkdownRemark.edges[0].node.frontmatter;
+  // const shuffledSpeakers = shuffle(speakers);
+
   return (
     <SpeakerGrid>
       {speakers.map(speaker => (
@@ -44,8 +46,6 @@ export default function Featured() {
     </SpeakerGrid>
   );
 }
-
-Featured.propTypes = {};
 
 const SpeakerGrid = styled.div`
   @media screen and (min-width: 700px) {

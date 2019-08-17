@@ -4,14 +4,18 @@ module.exports = {
     subtitle: `September 9th - 14th, 2019`,
     description: `Info on Events and Schedule for AIGA Louisville's Annual Design Week.`,
     author: `David Soards`,
+    url: `https://louisvilledesignweek.com`, // No trailing slash allowed!
+    image: `/images/og-image.png`, // Path to your image you placed in the 'static' folder
+    twitterUsername: `@aigalou`,
+
     menuLinks: [
       {
-        name: 'Speakers',
-        link: '/speakers',
+        name: `Speakers`,
+        link: `/speakers`,
       },
       {
-        name: 'Schedule',
-        link: '/schedule',
+        name: `Schedule`,
+        link: `/schedule`,
       },
     ],
   },
