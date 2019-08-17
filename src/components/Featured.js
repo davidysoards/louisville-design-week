@@ -30,19 +30,17 @@ export default function Featured() {
   const { speakers } = data.allMarkdownRemark.edges[0].node.frontmatter;
   return (
     <SpeakerGrid>
-      {shuffle(
-        speakers.map(speaker => (
-          <FeaturedSpeaker
-            name={speaker.name}
-            keynote={speaker.keynote}
-            job={speaker.job}
-            website={speaker.website}
-            imgSrc={speaker.image}
-            imgAlt={speaker.alt}
-            key={speaker.name}
-          />
-        ))
-      )}
+      {speakers.map(speaker => (
+        <FeaturedSpeaker
+          name={speaker.name}
+          keynote={speaker.keynote}
+          job={speaker.job}
+          website={speaker.website}
+          imgSrc={speaker.image}
+          imgAlt={speaker.alt}
+          key={speaker.name}
+        />
+      ))}
     </SpeakerGrid>
   );
 }
