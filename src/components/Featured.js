@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { useStaticQuery, graphql } from 'gatsby';
-import shuffle from '../utils/shuffle';
+// import shuffle from '../utils/shuffle';
 import FeaturedSpeaker from '../components/FeaturedSpeaker';
 
 export default function Featured() {

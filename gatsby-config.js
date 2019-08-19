@@ -24,6 +24,17 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require(`autoprefixer`)({
+            flexbox: `no-2009`,
+            grid: true,
+          }),
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

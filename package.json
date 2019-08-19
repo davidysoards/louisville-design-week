@@ -14,6 +14,7 @@
     "gatsby-plugin-emotion": "^4.1.2",
     "gatsby-plugin-manifest": "^2.2.5",
     "gatsby-plugin-offline": "^2.2.6",
+    "gatsby-plugin-postcss": "^2.1.3",
     "gatsby-plugin-react-helmet": "^3.1.3",
     "gatsby-plugin-sharp": "^2.2.11",
     "gatsby-plugin-typography": "^2.3.2",
@@ -50,9 +51,8 @@
     "url": "https://github.com/davidysoards/louisville-design-week"
   },
   "browserslist": [
-    ">1%",
+    ">0.5%",
     "last 4 versions",
-    "not dead",
-    "ie 11"
+    "not ie < 11"
   ]
 }
