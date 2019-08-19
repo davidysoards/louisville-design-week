@@ -14,8 +14,8 @@ speakers:
     bio: "<p>Gail Anderson is a New York-based designer, writer, and educator. She is a partner, with Joe Newton, at Anderson Newton Design. From 1987 to early 2002, she worked at Rolling Stone magazine, serving as designer, deputy art director, and finally, as the magazine's senior art director.From 2002 through 2010, she served as Creative Director of Design at SpotCo, a New York City advertising agency that creates artwork for Broadway and institutional theater.</p><p>She is the recipient of the Cooper Hewitt National Design Award for Lifetime Achievement and is an AIGA Medalist. Anderson is co-author of 15 books on design, typography, and illustration with Steven Heller, and her work is in the collections of the Library of Congress and the Milton Glaser Design Archives at the School of Visual Arts.</p>"
 
   - name: Kate Bingaman-Burt
-    image: /images/headshot-kate-bingaman-burt.jpg
-    alt: kate bingaman-burt headshot
+    image: /images/studio-kate-bingaman-burt.jpg
+    alt: kate bingaman-burt in studio
     job: Illustrator & Educator
     website: http://katebingamanburt.com/
     socialLinks:
@@ -58,7 +58,7 @@ speakers:
     bio: '<p>Dana Tanamachi is a New York City-based lettering artist and designer who enjoys living a quiet life and working with her hands. In 2009, an impromptu chalk installation for a Brooklyn housewarming party landed Dana her first commission for Google and set the popular chalk-lettering trend—and her career—in motion. After working under design icon Louise Fili, she opened Tanamachi Studio, a boutique design studio specializing in custom typography and illustration for editorial, lifestyle, food, and fashion brands.</p><p>She has been commissioned globally by clients such as Target, Nike, USPS, Penguin Books, Ralph Lauren, Instagram, and West Elm. Named a Young Gun (YG9) by the Art Director’s Club in 2011 and a Young Creative to Watch by HOW Magazine, she has had the distinct honor of creating custom cover art for O, HOW, and TIME Magazines.</p>'
 
   - name: Ciara Leroy
-    image: /images/headshot-ciara-leroy.jpg
+    image: /images/headshot-ciara-leroy-2.jpg
     alt: ciara leroy headshot
     job: Multi-disciplinary Handicraft Artist
     website: http://www.prettystrange.design/
