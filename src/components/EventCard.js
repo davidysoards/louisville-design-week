@@ -52,6 +52,9 @@ const Card = styled.div`
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0px 2px 12px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const Wrapper = styled.div`
