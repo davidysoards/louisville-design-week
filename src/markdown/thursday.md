@@ -40,14 +40,14 @@ events:
     googleMapUrl: https://www.google.com/maps/place/Vivid+Impact+Corporation/@38.214342,-85.5684667,17z/data=!3m1!4b1!4m5!3m4!1s0x8869a03429515c89:0x2d174ab00089d9b7!8m2!3d38.2143378!4d-85.566278
 
   - startTime: 4:30 pm
-    endTime: 6:00 pm
+    endTime: 8:30 pm
     title: CAMP Social Club Happy Hour
     description:
     speaker:
     location: CAMP Social Club
     googleMapUrl: https://www.google.com/maps/place/Camp+Social+Club/@38.2384117,-85.7625941,15z/data=!4m5!3m4!1s0x0:0xa7a182d1365e0416!8m2!3d38.2384117!4d-85.7625941
 
-  - startTime: 7:00 pm
+  - startTime: 6:00 pm
     endTime: 8:30 pm
     title: Jeremiah Chiu
     description:

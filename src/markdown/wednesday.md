@@ -39,7 +39,7 @@ events:
     location: Always Open Storefront
     googleMapUrl: https://www.google.com/maps/place/827+E+Market+St,+Louisville,+KY+40206/@38.2535377,-85.7389026,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4c43512af:0x4a596a5908153b94!8m2!3d38.2535335!4d-85.7367139
 
-  - startTime: 7:00 pm
+  - startTime: 6:00 pm
     endTime: 8:30 pm
     title: 'Ben Blount: If You See Something, Say Something'
     description:
@@ -51,7 +51,7 @@ events:
 
   - startTime: 9:00 pm
     endTime: 11:00 pm
-    title: "Louisville's First Spelling Bee!"
+    title: 'The Great Via Studio Speling Bee!'
     description:
     speaker:
     image:

@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 export default function HeaderCTAButton() {
   return (
     <ATagWrapper
-      href="https://www.eventbrite.com/o/aiga-louisville-846197205"
+      href="https://www.eventbrite.com/e/aigalou-design-week-19-passport-tickets-68574912409"
       target="_blank"
       rel="noopener noreferrer"
     >

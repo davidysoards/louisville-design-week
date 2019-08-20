@@ -12,7 +12,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/VIA+Studio/@38.2524625,-85.7420979,17z/data=!3m1!4b1!4m5!3m4!1s0x886972dec5cc9407:0xb6df1269286cc200!8m2!3d38.2524583!4d-85.7399092
 
   - startTime: 9:00 am
-    endTime: 11:00 am
+    endTime: 12:00 pm
     title: 'Dan Barczak: Storybuilding Workshop'
     description:
     speaker: Dan Barczak
@@ -38,7 +38,7 @@ events:
     location: Hound Dog Press
     googleMapUrl: https://www.google.com/maps/place/Hound+Dog+Press/@38.2363132,-85.7305787,17z/data=!3m1!4b1!4m5!3m4!1s0x886972b8c1e9adef:0x251b8264ee113296!8m2!3d38.236309!4d-85.72839
 
-  - startTime: 7:00 pm
+  - startTime: 6:00 pm
     endTime: 8:30 pm
     title: 'Kate Bingaman-Burt: Space is the Place'
     description:

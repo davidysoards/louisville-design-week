@@ -53,9 +53,12 @@ export default function Events() {
       <Grid>
         {myEvents.map(event => {
           const { name, logo, start, end, venue, url } = event;
+          const trimmedName = name.text.startsWith('AIGALou Design Week 19:')
+            ? name.text.split('19: ')[1]
+            : name.text;
           return (
             <EventCard
-              name={name.text}
+              name={trimmedName}
               logo={logo ? logo.url : null}
               start={start.local}
               end={end.local}
