@@ -40,7 +40,7 @@ EventCard.propTypes = {
   logo: PropTypes.string.isRequired,
   start: PropTypes.string.isRequired,
   end: PropTypes.string.isRequired,
-  venue: PropTypes.string.isRequired,
+  venue: PropTypes.string,
   url: PropTypes.string.isRequired,
 };
 
