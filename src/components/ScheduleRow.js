@@ -28,11 +28,11 @@ export default function ScheduleRow({
         <Location href={googleMapUrl} target="_blank" rel="noopener noreferrer">
           {location}
         </Location>
-        <Description>{description}</Description>
       </div>
       <Avatar>
         <img src={imgSrc} alt={imgAlt} />
       </Avatar>
+      <Description>{description}</Description>
     </EventRow>
   );
 }
@@ -65,8 +65,12 @@ const Column1 = styled.div`
 
 const Time = styled.p`
   line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-primary);
   span {
+    color: var(--color-text);
     font-size: 0.7em;
+    opacity: 0.6;
   }
 `;
 
@@ -83,6 +87,11 @@ const Location = styled.a`
 const Description = styled.p`
   font-size: 0.8em;
   margin-bottom: 0;
+  grid-column: 1 / 4;
+  /* padding: 0 10px; */
+  @media screen and (min-width: 768px) {
+    font-size: 0.9em;
+  }
 `;
 
 const Avatar = styled.div`

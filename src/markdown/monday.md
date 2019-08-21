@@ -6,14 +6,14 @@ events:
   - startTime: 8:00 am
     endTime: 9:00 am
     title: Yoga
-    description:
+    description: Story Louisville, AIGA and our friends at @kentuckyyogainitiative invite you to start your Design Week off right with free yoga surrounded by natural light in our 3rd floor event space.
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
 
   - startTime: 9:00 am
     endTime: 10:00 am
     title: Kick-off Breakfast
-    description:
+    description: Let's get this party started! Unlock your ticket for the week. Swing by, sign in and pick up your passport.
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
 
@@ -27,7 +27,7 @@ events:
   - startTime: 6:00 pm
     endTime: 8:30 pm
     title: 'Dan Barczak: Storybuilding & the Future of Truth In Our Branded World'
-    description:
+    description: Getting people to understand who you are and why you exist as a human being or as an organization sounds easy. It’s not. Especially when things around us are in a constant state of disruption. Dan will share the essentials of building brands and businesses rooted in truth, and some foundational principles for how we communicate as humans – and how this thinking can translate to how people actually experience your brand, whether you’re a startup, a global giant, a nonprofit, or the underserved.
     speaker: Dan Barczak
     image: /images/headshot-dan-barczak.jpg
     alt: dan barczak headshot

@@ -28,7 +28,7 @@ export default function EventCard({ name, logo, start, end, venue, url }) {
           </div>
         </Text>
         <ButtonWrapper href={url} target="_blank" rel="noopener noreferrer">
-          <Button>Buy Tickets</Button>
+          <Button>Get Tickets</Button>
         </ButtonWrapper>
       </Wrapper>
     </Card>

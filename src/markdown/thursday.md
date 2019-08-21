@@ -6,7 +6,7 @@ events:
   - startTime: 9:00 am
     endTime: 10:30 am
     title: A Hands-On Class in Printmaking
-    description:
+    description: Mitch will teach attendees how to craft their own linoleum block stamps. The stamps will be relatively small and used later in the demonstration to stamp one another's "passports" - small, handmade zine-style booklets that attendees can take with them. We'll also be discussing the benefits of using real techniques versus plug-ins and how best to incorporate the technique into digital work.
     speaker:
     location: VIA Studio
     googleMapUrl: https://www.google.com/maps/place/VIA+Studio/@38.2524625,-85.7420979,17z/data=!3m1!4b1!4m5!3m4!1s0x886972dec5cc9407:0xb6df1269286cc200!8m2!3d38.2524583!4d-85.7399092
@@ -22,7 +22,7 @@ events:
   - startTime: 1:00 pm
     endTime: 4:00 pm
     title: "Ben Blount: There's Levels to This (Letterpress Workshop)"
-    description:
+    description: There’s a great tradition of using the printing press to create material to inspire, to educate, to motivate, and to inform. As designers and communicators, we will carry on that tradition by printing posters with important messages that are worth sharing. Bring your big ideas and we will be building our compositions in real time with multiple passes through the press. Wood type will be our weapon of choice in building layers of text and meaning onto our prints. Both new and experienced printers should come ready to explore some new approaches, create in a collaborative environment, and get inky.
     speaker: Ben Blount
     image: /images/headshot-ben-blount.jpg
     alt: ben blount headshot

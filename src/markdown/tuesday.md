@@ -6,7 +6,7 @@ events:
   - startTime: 9:00 am
     endTime: 11:00 am
     title: Anxiety in the Creative Field w/Liz & Danny Cash
-    description:
+    description: Danny will doing the introduction, talking about what it's like to be a designer who has wrestled with anxiety his whole career and how it's common across the creative field. Liz will then discuss what anxiety is, how it affects the creative process, and how to manage it. She'll walk the audience through a few exercises they can do on their own to help manage anxiety. Afterward, she'll host a Q&A.
     speaker:
     location: Via Studio
     googleMapUrl: https://www.google.com/maps/place/VIA+Studio/@38.2524625,-85.7420979,17z/data=!3m1!4b1!4m5!3m4!1s0x886972dec5cc9407:0xb6df1269286cc200!8m2!3d38.2524583!4d-85.7399092
@@ -14,7 +14,7 @@ events:
   - startTime: 9:00 am
     endTime: 12:00 pm
     title: 'Dan Barczak: Storybuilding Workshop'
-    description:
+    description: Building on his opening night talk, Dan will give an in-depth walkthrough of some of his current projects with more examples of how designers can work with their clients to translate the foundational principles of Storybuilding and how we communicate as humans into how people actually experience your brand, whether you’re a startup, a global giant, nonprofit, or the underserved.
     speaker: Dan Barczak
     image: /images/headshot-dan-barczak.jpg
     alt: dan barczak headshot
@@ -24,7 +24,7 @@ events:
   - startTime: 1:00 pm
     endTime: 2:30 pm
     title: 'UX: A New/Old Frontier'
-    description:
+    description: The Field of User Experience (UX) Design continues to grow. Should you make a big change to jump start your design career – and how? This session will follow the path of one commercial artist/graphic designer/visual designer/UX Interaction designer and how she stays relevant in the wild west world of “new” user-centered design practices. Karen Abney, a design professional for over forty years, describes her journey on a new career direction and explains the process of how she navigated a place in the new UX world.
     speaker:
     image:
     alt:
@@ -41,7 +41,7 @@ events:
   - startTime: 6:00 pm
     endTime: 8:30 pm
     title: 'Kate Bingaman-Burt: Space is the Place'
-    description:
+    description: Illustrator and educator, Kate Bingaman-Burt is a little more than obsessed with bringing people together through creative work and developing spaces for making and sharing to happen. Come and join Kate as she talks about her long-time drawing practices, her print studio Outlet, her love of bookmobiles, and why making spaces into places has been the one consistent throughline in her sort of all over the place career.
     speaker: Kate Bingaman-Burt
     image: /images/headshot-kate-bingaman-burt.jpg
     alt: kate bingaman-burt headshot

@@ -24,7 +24,7 @@ events:
   - startTime: 1:00 pm
     endTime: 4:00 pm
     title: 'Kate Bingaman-Burt: Risograph Open Studio'
-    description:
+    description: Come and learn all about the basics of the Risograph. This Open Studio will have piles of print and zine examples as well as Risograph resource materials, mark making and collage supplies to make your own two color print and/or one page zine! Come and join us for a general exploration of how we can get the best results from this amazing printing machine. Participants will take home a small edition of their 2-color 8.5x11 prints of your own design plus a chance to participate in the Leave a Print / Take a Print Pile.
     speaker: Kate Bingaman-Burt
     image: /images/headshot-kate-bingaman-burt.jpg
     alt: kate bingaman-burt headshot
@@ -42,7 +42,7 @@ events:
   - startTime: 6:00 pm
     endTime: 8:30 pm
     title: 'Ben Blount: If You See Something, Say Something'
-    description:
+    description: Join designer and printer Ben Blount in conversation about the power of print to tell compelling stories. Blount will share the decade-long journey of his passionate side hustle - making stuff. In response to news, current events, and personal narratives, Blount creates work meant to educate, amuse, and provoke conversation about race and culture in the United States.
     speaker: Ben Blount
     image: /images/headshot-ben-blount.jpg
     alt: ben blount headshot
@@ -52,7 +52,7 @@ events:
   - startTime: 9:00 pm
     endTime: 11:00 pm
     title: 'The Great Via Studio Speling Bee!'
-    description:
+    description: Avenge your elementary school failure with Louisville’s first-ever* Speling Bee! Spell a word, win a beer and move closer to a cash prize. Low low $3 to enter, cash prizes, beers, heckling. NO KIDS.
     speaker:
     image:
     alt:
