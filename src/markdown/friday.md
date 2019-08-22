@@ -16,7 +16,7 @@ events:
   - startTime: 9:00 am
     endTime: 4:00 pm
     title: 'Design It Forward Kentucky: Student Design Competition'
-    description: “Design it Forward” is a one-day student-design competition where students receive a design brief the morning of the competition and students from regional universities work in teams. Think Food Network’s “Chopped”, but for graphic design. Throughout the day students work on creating graphics and a final presentation that they present to a panel of judges to determine the winner. The end-product is a logo and/or design project that serves a regional non-profit client. This event puts students in a real-world time crunch and also provides service-design for the region.
+    description: “Design it Forward” is a one-day student-design competition where students receive a design brief the morning of the competition and students from regional universities work in teams. Think Food Network's “Chopped”, but for graphic design. Throughout the day students work on creating graphics and a final presentation that they present to a panel of judges to determine the winner. The end-product is a logo and/or design project that serves a regional non-profit client. This event puts students in a real-world time crunch and also provides service-design for the region.
     speaker:
     image:
     alt:
@@ -28,7 +28,7 @@ events:
     title: 'Ciara LeRoy: Lettering with Thread - Make a Statement with Embroidery'
     description:
     speaker: Ciara Leroy
-    image: /images/headshot-ciara-leroy.jpg
+    image: /images/headshot-ciara-leroy-2.jpg
     alt: Ciara Leroy headshot
     location: The Holy Goat
     googleMapUrl: https://www.google.com/maps/place/The+Holy+Goat+Louisville/@38.2526172,-85.7426257,17z/data=!3m1!4b1!4m8!3m7!1s0x886972c5d2b58321:0x65f4ee2680a1f67d!5m2!4m1!1i2!8m2!3d38.252613!4d-85.740437
@@ -36,7 +36,7 @@ events:
   - startTime: 2:00 pm
     endTime: 4:00 pm
     title: 'Friday the 13th Cemetery Typography Tour'
-    description: At one time Louisville was an epicenter of monument design, and Cave Hill Cemetery is filled with many beautiful examples of why. Join the Cave Hill staff on a design-centric walking tour of Louisville’s Historic Cave Hill Cemetery. We will get a brief history of stone carving processes (new and old) and how that influences monument design over the years. This is your chance to find the hidden typographic gems of Cave Hill and meet the people who design, restore and preserve the monuments of this Louisville treasure. Stick around afterwards to make some of your own grave rubbings!
+    description: At one time Louisville was an epicenter of monument design, and Cave Hill Cemetery is filled with many beautiful examples of why. Join the Cave Hill staff on a design-centric walking tour of Louisville's Historic Cave Hill Cemetery. We will get a brief history of stone carving processes (new and old) and how that influences monument design over the years. This is your chance to find the hidden typographic gems of Cave Hill and meet the people who design, restore and preserve the monuments of this Louisville treasure. Stick around afterwards to make some of your own grave rubbings!
     speaker: Brad Vetter
     location: Cave Hill Cemetery
     googleMapUrl: https://www.google.com/maps/place/Cave+Hill+Cemetery/@38.2454051,-85.7170115,17z/data=!3m1!4b1!4m5!3m4!1s0x88697331b893bc8b:0xd96806c24a7f12cf!8m2!3d38.2454009!4d-85.7148228
@@ -44,7 +44,7 @@ events:
   - startTime: 4:00 pm
     endTime: 6:00 pm
     title: Get Out of the House! In-House Designers Mixer
-    description: Time to get out of the house and hang out with in-house creatives! Meet other in-house designers at our happy hour at the Always Open Storefront. You’ll get the chance to talk shop and sign up for our online community, future involvement, and resources.
+    description: Time to get out of the house and hang out with in-house creatives! Meet other in-house designers at our happy hour at the Always Open Storefront. You'll get the chance to talk shop and sign up for our online community, future involvement, and resources.
     speaker:
     location: Always Open Storefront
     googleMapUrl: https://www.google.com/maps/place/827+E+Market+St,+Louisville,+KY+40206/@38.2535377,-85.7389026,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4c43512af:0x4a596a5908153b94!8m2!3d38.2535335!4d-85.7367139
@@ -52,7 +52,7 @@ events:
   - startTime: 6:00 pm
     endTime: 8:30 pm
     title: 'Gail Anderson: Think Design - Keynote Address'
-    description: So much of our time is spent looking down, typically at some kind of screen. But there are places to find inspiration beyond Instagram or a Pinterest board. Hear tales from a “veteran” designer (as anyone of a certain age who’s still working is called). Discover ways to keep your work fresh. Learn how to remain challenged. Or just show up because it’s the final presentation of an amazing week—and probably the best way to jumpstart an inspired weekend. But prepare to exchange ideas with someone who’s still thinking about design pretty much all the time, even 35 year in. It'll be fun.
+    description: So much of our time is spent looking down, typically at some kind of screen. But there are places to find inspiration beyond Instagram or a Pinterest board. Hear tales from a “veteran” designer (as anyone of a certain age who's still working is called). Discover ways to keep your work fresh. Learn how to remain challenged. Or just show up because it's the final presentation of an amazing week—and probably the best way to jumpstart an inspired weekend. But prepare to exchange ideas with someone who's still thinking about design pretty much all the time, even 35 year in. It'll be fun.
     speaker: Gail Anderson
     image: /images/headshot-gail-anderson.jpg
     alt: gail anderson headshot

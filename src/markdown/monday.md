@@ -27,7 +27,7 @@ events:
   - startTime: 6:00 pm
     endTime: 8:30 pm
     title: 'Dan Barczak: Storybuilding & the Future of Truth In Our Branded World'
-    description: Getting people to understand who you are and why you exist as a human being or as an organization sounds easy. It’s not. Especially when things around us are in a constant state of disruption. Dan will share the essentials of building brands and businesses rooted in truth, and some foundational principles for how we communicate as humans – and how this thinking can translate to how people actually experience your brand, whether you’re a startup, a global giant, a nonprofit, or the underserved.
+    description: Getting people to understand who you are and why you exist as a human being or as an organization sounds easy. It's not. Especially when things around us are in a constant state of disruption. Dan will share the essentials of building brands and businesses rooted in truth, and some foundational principles for how we communicate as humans – and how this thinking can translate to how people actually experience your brand, whether you're a startup, a global giant, a nonprofit, or the underserved.
     speaker: Dan Barczak
     image: /images/headshot-dan-barczak.jpg
     alt: dan barczak headshot

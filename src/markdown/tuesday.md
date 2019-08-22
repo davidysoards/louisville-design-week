@@ -14,7 +14,7 @@ events:
   - startTime: 9:00 am
     endTime: 12:00 pm
     title: 'Dan Barczak: Storybuilding Workshop'
-    description: Building on his opening night talk, Dan will give an in-depth walkthrough of some of his current projects with more examples of how designers can work with their clients to translate the foundational principles of Storybuilding and how we communicate as humans into how people actually experience your brand, whether you’re a startup, a global giant, nonprofit, or the underserved.
+    description: Building on his opening night talk, Dan will give an in-depth walkthrough of some of his current projects with more examples of how designers can work with their clients to translate the foundational principles of Storybuilding and how we communicate as humans into how people actually experience your brand, whether you're a startup, a global giant, nonprofit, or the underserved.
     speaker: Dan Barczak
     image: /images/headshot-dan-barczak.jpg
     alt: dan barczak headshot
@@ -43,7 +43,7 @@ events:
     title: 'Kate Bingaman-Burt: Space is the Place'
     description: Illustrator and educator, Kate Bingaman-Burt is a little more than obsessed with bringing people together through creative work and developing spaces for making and sharing to happen. Come and join Kate as she talks about her long-time drawing practices, her print studio Outlet, her love of bookmobiles, and why making spaces into places has been the one consistent throughline in her sort of all over the place career.
     speaker: Kate Bingaman-Burt
-    image: /images/headshot-kate-bingaman-burt.jpg
+    image: /images/studio-kate-bingaman-burt.jpg
     alt: kate bingaman-burt headshot
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
