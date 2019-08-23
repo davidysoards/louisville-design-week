@@ -49,10 +49,13 @@ export default function Featured() {
 
 const SpeakerGrid = styled.div`
   @media screen and (min-width: 700px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
   }
-  @media screen and (min-width: 1000px) {
+  /* @media screen and (min-width: 1000px) {
     grid-template-columns: 1fr 1fr 1fr;
-  }
+  } */
 `;

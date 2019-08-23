@@ -73,8 +73,7 @@ const Container = styled.div`
 
 const Columns = styled.div`
   @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
   }
 `;
 

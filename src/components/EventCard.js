@@ -55,6 +55,10 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 10px;
+  @supports (display: grid) {
+    margin: 0;
+  }
 `;
 
 const Wrapper = styled.div`

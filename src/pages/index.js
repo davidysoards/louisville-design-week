@@ -59,10 +59,13 @@ const Hero = styled.div`
   }
   @media screen and (min-width: 1024px) {
     max-width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
     align-items: center;
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
   }
 `;
 
@@ -72,6 +75,7 @@ const SvgWrapper = styled.div`
   margin: 20px auto;
   @media screen and (min-width: 1024px) {
     margin: 40px auto;
+    flex-shrink: 0;
   }
 `;
 

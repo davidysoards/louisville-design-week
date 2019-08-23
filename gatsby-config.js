@@ -17,6 +17,10 @@ module.exports = {
         name: `Schedule`,
         link: `/schedule`,
       },
+      {
+        name: `Sponsors`,
+        link: `/sponsors`,
+      },
     ],
   },
   plugins: [

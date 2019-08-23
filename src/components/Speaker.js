@@ -39,11 +39,14 @@ Speaker.propTypes = {
 };
 
 const FeaturedContainer = styled.div`
-  grid-gap: 20px;
   margin-bottom: 50px;
   @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    @supports (display: grid) {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 2fr;
+    }
   }
 `;
 

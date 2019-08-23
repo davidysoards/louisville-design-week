@@ -80,10 +80,15 @@ const PageTitle = styled.h1`
 
 const ScheduleMenu = styled.menu`
   margin-bottom: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  @media screen and (min-width: 700px) {
-    grid-template-columns: repeat(6, auto);
+  display: flex;
+  justify-content: space-evenly;
+  @supports (display: grid) {
+    display: grid;
+    justify-content: stretch;
+    grid-template-columns: repeat(3, auto);
+    @media screen and (min-width: 700px) {
+      grid-template-columns: repeat(6, auto);
+    }
   }
 `;
 

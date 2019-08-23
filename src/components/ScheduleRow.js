@@ -49,9 +49,14 @@ ScheduleRow.propTypes = {
 };
 
 const EventRow = styled.div`
-  display: grid;
-  grid-template-columns: 1.5fr 3fr 1fr;
-  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1fr;
+    grid-gap: 10px;
+  }
   padding-bottom: 15px;
   margin: 15px 0;
   border-bottom: 2px solid var(--color-text);
@@ -87,8 +92,9 @@ const Location = styled.a`
 const Description = styled.p`
   font-size: 0.8em;
   margin-bottom: 0;
-  grid-column: 1 / 4;
-  /* padding: 0 10px; */
+  @supports (display: grid) {
+    grid-column: 1 / 4;
+  }
   @media screen and (min-width: 768px) {
     font-size: 0.9em;
   }

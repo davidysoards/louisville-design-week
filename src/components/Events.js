@@ -74,13 +74,17 @@ export default function Events() {
 }
 
 const Grid = styled.section`
-  display: grid;
-  grid-gap: 20px;
-  justify-content: center;
-  @media screen and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media screen and (min-width: 1024px) {
-    grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: 20px;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 `;

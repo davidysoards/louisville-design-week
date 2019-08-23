@@ -74,7 +74,11 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
                 id="mode"
                 ariaLabel="dark mode toggle"
               />
-              <span className="message">Toggle Day or Night!</span>
+              <span className="message">
+                Toggle Day
+                <br />
+                or Night!
+              </span>
             </Label>
           </MenuWrapper>
         </Container>
@@ -114,7 +118,7 @@ Header.propTypes = {
   isChecked: PropTypes.bool.isRequired,
 };
 
-const bpMed = '1000px';
+const bpMed = '1040px';
 
 const HeaderNav = styled.header`
   .header {
@@ -224,7 +228,7 @@ const Label = styled.label`
     display: none;
     @media screen and (min-width: ${bpMed}) {
       display: inline;
-      font-size: 0.7em;
+      font-size: 0.6em;
       margin-left: 10px;
     }
   }
