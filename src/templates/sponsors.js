@@ -6,9 +6,8 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 export default function SponsorsPage({ data }) {
-  console.log(data);
+  // console.log(data);
   const { sponsors } = data.markdownRemark.frontmatter;
-
   return (
     <Layout>
       <SEO title="Sponsors" />
@@ -17,16 +16,17 @@ export default function SponsorsPage({ data }) {
         {sponsors.map(sponsor => {
           const { name, url, width, image } = sponsor;
           return (
-            <a href={url}>
-              <Sponsor
-                src={image}
-                alt={name}
-                key={name}
-                style={{
-                  width: `${width}px`,
-                }}
-              />
-            </a>
+            <div
+              style={{
+                width: `${width}px`,
+                margin: '0 auto',
+              }}
+              key={name}
+            >
+              <a href={url}>
+                <Sponsor src={image} alt={name} />
+              </a>
+            </div>
           );
         })}
       </SponsorsContainer>
