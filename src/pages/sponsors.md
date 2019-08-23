@@ -19,7 +19,7 @@ sponsors:
   - name: Ingrid Design
     url: 'http://www.ingriddesign.com/'
     image: /images/logo-ingrid.svg
-    width: 300
+    width: 320
 
   - name: Millcraft
     url: 'https://www.millcraft.com/'
@@ -29,12 +29,12 @@ sponsors:
   - name: Mohawk
     url: 'https://www.mohawkconnects.com/'
     image: /images/logo-mohawk.svg
-    width: 300
+    width: 280
 
   - name: Stewart & Associates
     url: 'https://designthatthinks.com/'
     image: /images/logo-stewart.svg
-    width: 300
+    width: 360
 
   - name: Unique Imaging Concepts
     url: 'https://uniqueimagingconcepts.com/'
