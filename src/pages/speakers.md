@@ -14,7 +14,7 @@ speakers:
     bio: "<p>Gail Anderson is a New York-based designer, writer, and educator. She is a partner, with Joe Newton, at Anderson Newton Design. From 1987 to early 2002, she worked at Rolling Stone magazine, serving as designer, deputy art director, and finally, as the magazine's senior art director.From 2002 through 2010, she served as Creative Director of Design at SpotCo, a New York City advertising agency that creates artwork for Broadway and institutional theater.</p><p>She is the recipient of the Cooper Hewitt National Design Award for Lifetime Achievement and is an AIGA Medalist. Anderson is co-author of 15 books on design, typography, and illustration with Steven Heller, and her work is in the collections of the Library of Congress and the Milton Glaser Design Archives at the School of Visual Arts.</p>"
 
   - name: Kate Bingaman-Burt
-    image: /images/studio-kate-bingaman-burt.jpg
+    image: /images/headshot-kate-bingaman-burt-2.jpg
     alt: kate bingaman-burt in studio
     job: Illustrator & Educator
     website: http://katebingamanburt.com/

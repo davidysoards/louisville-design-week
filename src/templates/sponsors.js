@@ -4,32 +4,26 @@ import styled from '@emotion/styled';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import SponsorsSection from '../components/SponsorsSection';
 
 export default function SponsorsPage({ data }) {
   // console.log(data);
-  const { sponsors } = data.markdownRemark.frontmatter;
+  const { topLevel } = data.markdownRemark.frontmatter;
+  const { midLevel } = data.markdownRemark.frontmatter;
+  const { lowerLevel } = data.markdownRemark.frontmatter;
   return (
     <Layout>
       <SEO title="Sponsors" />
       <PageTitle>Sponsors</PageTitle>
-      <SponsorsContainer>
-        {sponsors.map(sponsor => {
-          const { name, url, width, image } = sponsor;
-          return (
-            <div
-              style={{
-                width: `${width}px`,
-                margin: '0 auto',
-              }}
-              key={name}
-            >
-              <a href={url}>
-                <Sponsor src={image} alt={name} />
-              </a>
-            </div>
-          );
-        })}
-      </SponsorsContainer>
+
+      <SectionTitle>Top Level</SectionTitle>
+      <SponsorsSection level={topLevel} />
+
+      <SectionTitle>Paid Sponsors</SectionTitle>
+      <SponsorsSection level={midLevel} />
+
+      <SectionTitle>In-Kind Sponsors</SectionTitle>
+      <SponsorsSection level={lowerLevel} />
     </Layout>
   );
 }
@@ -52,24 +46,28 @@ const PageTitle = styled.h1`
   }
 `;
 
-const Sponsor = styled.img`
+const SectionTitle = styled.h2`
   padding: 20px;
-`;
-
-const SponsorsContainer = styled.div`
-  margin: 0 auto;
-  @media screen and (min-width: 700px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  text-align: center;
 `;
 
 export const query = graphql`
   query SponsorsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        sponsors {
+        topLevel {
+          name
+          url
+          width
+          image
+        }
+        midLevel {
+          name
+          url
+          width
+          image
+        }
+        lowerLevel {
           name
           url
           width
