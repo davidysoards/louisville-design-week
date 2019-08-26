@@ -73,8 +73,10 @@ const Container = styled.div`
 `;
 
 const Columns = styled.div`
-  @media screen and (min-width: 768px) {
-    display: flex;
+  @supports (display: grid) {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 `;
 
