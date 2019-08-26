@@ -26,8 +26,10 @@ const Button = styled.button`
   letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
+  background: #0c969b;
   background: var(--color-secondary);
   border: none;
+  color: rgba(255, 255, 255, 0.9);
   color: var(--color-header-bg);
   cursor: pointer;
   transition: box-shadow 0.2s, color 0.3s, transform 0.1s ease-out;

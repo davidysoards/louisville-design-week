@@ -4,7 +4,7 @@ dayIndex: 3
 dayOfWeek: Thursday
 events:
   - startTime: 9:00 am
-    endTime: 10:30 am
+    endTime: 11:30 am
     title: A Hands-On Class in Printmaking
     description: Mitch will teach attendees how to craft their own linoleum block stamps. The stamps will be relatively small and used later in the demonstration to stamp one another's “passports” - small, handmade zine-style booklets that attendees can take with them. We'll also be discussing the benefits of using real techniques versus plug-ins and how best to incorporate the technique into digital work.
     speaker:

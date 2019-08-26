@@ -76,7 +76,9 @@ const Container = styled.div`
     &[type='submit'] {
       padding: 5px;
       background: none;
+      color: #994cc3;
       color: var(--color-text);
+      border: 2px solid #994cc3;
       border: 2px solid var(--color-text);
       border-radius: 4px;
       font-size: 1rem;
@@ -86,7 +88,9 @@ const Container = styled.div`
       cursor: pointer;
       transition: background 0.5s, color 0.5s, border-color 0.5s;
       &:hover {
+        background: #994cc3;
         background: var(--color-text);
+        color: #f0f0f0;
         color: var(--color-bg);
       }
     }

@@ -22,7 +22,9 @@ html {
 body {
   margin: 0;
   line-height: 1;
+  background: #f0f0f0;
   background: var(--color-bg);
+  color: #994cc3;
   color: var(--color-text);
   transition: background 0.8s, color 0.8s;
 }
@@ -34,6 +36,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: #ef5350;
   color: var(--color-primary);
 }
 
@@ -50,6 +53,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #0c969b;
   color: var(--color-secondary);
 }
 a:hover {
@@ -79,19 +83,12 @@ td {
   border: none;
 }
 
-.site {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 main {
   align-self: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
-  flex: 1;
 }
 
 menu {

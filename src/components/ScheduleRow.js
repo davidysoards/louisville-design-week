@@ -59,6 +59,7 @@ const EventRow = styled.div`
   }
   padding-bottom: 15px;
   margin: 15px 0;
+  border-bottom: 2px solid #994cc3;
   border-bottom: 2px solid var(--color-text);
 `;
 
@@ -71,8 +72,10 @@ const Column1 = styled.div`
 const Time = styled.p`
   line-height: 1.2;
   font-weight: 700;
+  color: #ef5350;
   color: var(--color-primary);
   span {
+    color: #994cc3;
     color: var(--color-text);
     font-size: 0.7em;
     opacity: 0.6;

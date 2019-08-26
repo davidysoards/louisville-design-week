@@ -58,6 +58,7 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
                 <Link
                   to={link.link}
                   activeStyle={{
+                    borderBottom: '2px solid #ef5350',
                     borderBottom: '2px solid var(--color-primary)',
                   }}
                   key={link.name}
@@ -95,6 +96,7 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
                 <Link
                   to={link.link}
                   activeStyle={{
+                    borderBottom: '2px solid #ef5350',
                     borderBottom: '2px solid var(--color-primary)',
                   }}
                 >
@@ -122,6 +124,7 @@ const bpMed = '1040px';
 
 const HeaderNav = styled.header`
   .header {
+    background: rgba(255, 255, 255, 0.9);
     background: var(--color-header-bg);
     position: fixed;
     width: 100%;
@@ -135,17 +138,21 @@ const HeaderNav = styled.header`
       box-shadow: none;
     }
     a {
+      color: #ef5350;
       color: var(--color-primary);
       &:hover {
+        color: #0c969b;
         color: var(--color-secondary);
         opacity: 1;
       }
     }
     .logo {
+      fill: #ef5350;
       fill: var(--color-primary);
       transition: fill 0.5s;
       height: 32px;
       &:hover {
+        fill: #0c969b;
         fill: var(--color-secondary);
       }
       @media screen and (min-width: ${bpMed}) {
@@ -155,7 +162,9 @@ const HeaderNav = styled.header`
 
     &.headerScrolled {
       @media screen and (min-width: ${bpMed}) {
+        color: #994cc3;
         color: var(--color-text);
+        background: rgba(255, 255, 255, 0.9);
         background: var(--color-header-bg);
         padding: 0;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -170,6 +179,7 @@ const MenuButton = styled.button`
   padding: 0;
   margin: 0;
   .hamburger {
+    fill: #994cc3;
     fill: var(--color-text);
     transition: fill 0.5s;
     height: 40px;
@@ -205,6 +215,7 @@ const NavDesktop = styled.nav`
 `;
 
 const NavMobile = styled.nav`
+  background: rgba(255, 255, 255, 0.9);
   background: var(--color-header-bg);
   overflow: hidden;
   transition: height 0.3s ease-in;
@@ -218,6 +229,7 @@ const NavMobileContainer = styled.div`
 `;
 const Row = styled.div`
   padding: 15px 10px;
+  border-top: 2px solid #994cc3;
   border-top: 2px solid var(--color-text);
 `;
 

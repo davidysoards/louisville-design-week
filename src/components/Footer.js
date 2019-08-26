@@ -61,6 +61,7 @@ const SocialWrapper = styled.h3`
 `;
 
 const FooterWrapper = styled.footer`
+  background: rgba(255, 255, 255, 0.9);
   background: var(--color-header-bg);
   margin-top: 30px;
 `;

@@ -95,7 +95,9 @@ const ScheduleMenu = styled.menu`
 const MenuButton = styled.menu`
   padding: 5px;
   margin: 2px;
+  background: #0c969b;
   background: var(--color-secondary);
+  color: #f0f0f0;
   color: var(--color-bg);
   font-weight: 700;
   text-align: center;
@@ -107,6 +109,7 @@ const MenuButton = styled.menu`
     color: white;
   }
   &.active {
+    background: #ef5350;
     background: var(--color-primary);
   }
 `;

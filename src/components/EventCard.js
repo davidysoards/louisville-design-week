@@ -114,6 +114,7 @@ const Button = styled.button`
   letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
+  background: #0c969b;
   background: var(--color-secondary);
   border: none;
   color: white;

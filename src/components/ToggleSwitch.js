@@ -17,7 +17,7 @@ export default function ToggleSwitch({
         id={id}
         aria-label={ariaLabel}
       />
-      <Slider></Slider>
+      <Slider />
     </Toggle>
   );
 }

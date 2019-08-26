@@ -62,6 +62,7 @@ const NameWrapper = styled.div`
 
 const Name = styled.h2`
   &:hover {
+    color: #0c969b;
     color: var(--color-secondary);
   }
 `;

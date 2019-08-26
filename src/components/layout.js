@@ -37,12 +37,13 @@ export default function Layout({ children }) {
   const [currentMode, setCurrentMode] = useState('light');
   const [isChecked, setIsChecked] = useState(false);
 
-  const toggleTheme = () => {
-    const newMode = currentMode === 'light' ? 'dark' : 'light';
-    setIsChecked(!isChecked);
-    setCurrentMode(newMode);
-    localStorage.setItem('mode', newMode);
-  };
+  useEffect(() => {
+    const theme = currentMode === 'light' ? lightTheme : darkTheme;
+    Object.keys(theme).forEach(key => {
+      const value = theme[key];
+      document.documentElement.style.setProperty(key, value);
+    });
+  }, [currentMode]);
 
   useEffect(() => {
     if (localStorage.getItem('mode') === 'dark') {
@@ -51,13 +52,12 @@ export default function Layout({ children }) {
     }
   }, []);
 
-  useEffect(() => {
-    const theme = currentMode === 'light' ? lightTheme : darkTheme;
-    Object.keys(theme).forEach(key => {
-      const value = theme[key];
-      document.documentElement.style.setProperty(key, value);
-    });
-  }, [currentMode]);
+  const toggleTheme = () => {
+    const newMode = currentMode === 'light' ? 'dark' : 'light';
+    setIsChecked(!isChecked);
+    setCurrentMode(newMode);
+    localStorage.setItem('mode', newMode);
+  };
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -74,7 +74,7 @@ export default function Layout({ children }) {
   `);
 
   return (
-    <div className="site">
+    <>
       <ModeContext.Provider value={currentMode}>
         <Header
           siteTitle={data.site.siteMetadata.title}
@@ -85,7 +85,7 @@ export default function Layout({ children }) {
         <main>{children}</main>
         <Footer />
       </ModeContext.Provider>
-    </div>
+    </>
   );
 }
 

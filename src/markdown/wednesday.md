@@ -6,7 +6,7 @@ events:
   - startTime: 9:00 am
     endTime: 11:00 am
     title: Studio Tours
-    description: Kertis Creative, VIA Studios, Unique Imaging Concepts, STEAM Exchange, Brad Vetter Studio, Natalie O Design
+    description: Kertis Creative, VIA Studio, Unique Imaging Concepts, STEAM Exchange, Brad Vetter Studio, Natalie O Design
     speaker:
     location:
     googleMapUrl:
