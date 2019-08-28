@@ -3,6 +3,15 @@ templateKey: day-schedule
 dayIndex: 0
 dayOfWeek: Monday
 events:
+  - startTime: 10:00 am
+    endTime: 10:00 pm
+    title: Always Open
+    description:
+    location: Storefront
+    googleMapUrl: https://www.google.com/maps/place/827+E+Market+St,+Louisville,+KY+40206/@38.2535377,-85.7389026,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4c43512af:0x4a596a5908153b94!8m2!3d38.2535335!4d-85.7367139
+    sponsor: /images/logo-zmmr.svg
+    sponsorAlt: zimmer design logo
+
   - startTime: 8:00 am
     endTime: 9:00 am
     title: Yoga
@@ -23,6 +32,8 @@ events:
     description:
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
+    sponsor: /images/logo-fieldtrip.svg
+    sponsorAlt: fieldtrip logo
 
   - startTime: 6:00 pm
     endTime: 8:30 pm
@@ -33,6 +44,8 @@ events:
     alt: dan barczak headshot
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
+    sponsor: /images/logo-story.svg
+    sponsorAlt: story logo
 
   - startTime: 8:30 pm
     endTime: 10:00 pm
@@ -43,4 +56,6 @@ events:
     alt:
     location: Always Open Storefront
     googleMapUrl: https://www.google.com/maps/place/827+E+Market+St,+Louisville,+KY+40206/@38.2535377,-85.7389026,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4c43512af:0x4a596a5908153b94!8m2!3d38.2535335!4d-85.7367139
+    sponsor: /images/logo-highnote.svg
+    sponsorAlt: highnote logo
 ---

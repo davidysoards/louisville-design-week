@@ -40,6 +40,8 @@ export default function SchedulePage({ data }) {
             googleMapUrl,
             image,
             alt,
+            sponsor,
+            sponsorAlt,
           } = event;
           return (
             <ScheduleRow
@@ -51,6 +53,8 @@ export default function SchedulePage({ data }) {
               googleMapUrl={googleMapUrl}
               imgSrc={image}
               imgAlt={alt}
+              sponsor={sponsor}
+              sponsorAlt={sponsorAlt}
               key={title}
             />
           );
@@ -141,6 +145,8 @@ export const query = graphql`
               googleMapUrl
               image
               alt
+              sponsor
+              sponsorAlt
             }
           }
         }

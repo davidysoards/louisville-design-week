@@ -11,6 +11,8 @@ export default function ScheduleRow({
   googleMapUrl,
   imgSrc,
   imgAlt,
+  sponsor,
+  sponsorAlt,
 }) {
   return (
     <EventRow>
@@ -28,6 +30,9 @@ export default function ScheduleRow({
         <Location href={googleMapUrl} target="_blank" rel="noopener noreferrer">
           {location}
         </Location>
+        <SponsorLogo>
+          <img src={sponsor} alt={sponsorAlt} />
+        </SponsorLogo>
       </div>
       <Avatar>
         <img src={imgSrc} alt={imgAlt} />
@@ -46,6 +51,8 @@ ScheduleRow.propTypes = {
   googleMapUrl: PropTypes.string,
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
+  sponsor: PropTypes.string,
+  sponsorAlt: PropTypes.string,
 };
 
 const EventRow = styled.div`
@@ -94,7 +101,7 @@ const Location = styled.a`
 
 const Description = styled.p`
   font-size: 0.8em;
-  margin-bottom: 0;
+  margin: 0;
   @supports (display: grid) {
     grid-column: 1 / 4;
   }
@@ -108,5 +115,12 @@ const Avatar = styled.div`
   img {
     border-radius: 100%;
     width: 60px;
+  }
+`;
+
+const SponsorLogo = styled.div`
+  margin-top: 15px;
+  img {
+    width: 120px;
   }
 `;

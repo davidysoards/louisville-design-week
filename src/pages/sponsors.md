@@ -88,6 +88,11 @@ lowerLevel:
     image: /images/logo-mightily.svg
     width: 160
 
+  - name: Fieldtrip
+    url: 'https://wearefieldtrip.com/'
+    image: /images/logo-fieldtrip.svg
+    width: 160
+
   - name: Humana
     url: 'https://www.humana.io/'
     image: /images/logo-humana.svg

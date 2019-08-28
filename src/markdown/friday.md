@@ -3,6 +3,15 @@ templateKey: day-schedule
 dayIndex: 4
 dayOfWeek: Friday
 events:
+  - startTime: 10:00 am
+    endTime: 11:00 pm
+    title: Always Open
+    description:
+    location: Storefront
+    googleMapUrl: https://www.google.com/maps/place/827+E+Market+St,+Louisville,+KY+40206/@38.2535377,-85.7389026,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4c43512af:0x4a596a5908153b94!8m2!3d38.2535335!4d-85.7367139
+    sponsor: /images/logo-zmmr.svg
+    sponsorAlt: zimmer design logo
+
   - startTime: 8:30 am
     endTime: 10:00 am
     title: 'Dana Tanamachi: Creative Mornings + AIGA'
@@ -22,6 +31,8 @@ events:
     alt:
     location: Ivy Tech Community College
     googleMapUrl: https://www.google.com/maps/place/Ivy+Tech+Community+College/@38.2531489,-85.8690082,11z/data=!4m8!1m2!2m1!1sivy+tech!3m4!1s0x0:0x6c6d5c077768313b!8m2!3d38.3894371!4d-85.7628822
+    sponsor: /images/logo-ivy-tech.svg
+    sponsorAlt: ivy tech logo
 
   - startTime: 11:00 am
     endTime: 1:00 pm
@@ -32,6 +43,8 @@ events:
     alt: Ciara Leroy headshot
     location: The Holy Goat
     googleMapUrl: https://www.google.com/maps/place/The+Holy+Goat+Louisville/@38.2526172,-85.7426257,17z/data=!3m1!4b1!4m8!3m7!1s0x886972c5d2b58321:0x65f4ee2680a1f67d!5m2!4m1!1i2!8m2!3d38.252613!4d-85.740437
+    sponsor: /images/logo-holy-goat.svg
+    sponsorAlt: the holy goat logo
 
   - startTime: 2:00 pm
     endTime: 4:00 pm
@@ -58,4 +71,6 @@ events:
     alt: gail anderson headshot
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
+    sponsor: /images/logo-stewart.svg
+    sponsorAlt: stewart and associates logo
 ---

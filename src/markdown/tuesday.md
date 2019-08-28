@@ -3,6 +3,15 @@ templateKey: day-schedule
 dayIndex: 1
 dayOfWeek: Tuesday
 events:
+  - startTime: 10:00 am
+    endTime: 10:30 pm
+    title: Always Open
+    description:
+    location: Storefront
+    googleMapUrl: https://www.google.com/maps/place/827+E+Market+St,+Louisville,+KY+40206/@38.2535377,-85.7389026,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4c43512af:0x4a596a5908153b94!8m2!3d38.2535335!4d-85.7367139
+    sponsor: /images/logo-zmmr.svg
+    sponsorAlt: zimmer design logo
+
   - startTime: 9:00 am
     endTime: 11:00 am
     title: Anxiety in the Creative Field w/Liz & Danny Cash
@@ -10,6 +19,8 @@ events:
     speaker:
     location: Via Studio
     googleMapUrl: https://www.google.com/maps/place/VIA+Studio/@38.2524625,-85.7420979,17z/data=!3m1!4b1!4m5!3m4!1s0x886972dec5cc9407:0xb6df1269286cc200!8m2!3d38.2524583!4d-85.7399092
+    sponsor: /images/logo-via.svg
+    sponsorAlt: via studio logo
 
   - startTime: 9:00 am
     endTime: 12:00 pm
@@ -20,6 +31,8 @@ events:
     alt: dan barczak headshot
     location: U of L Belknap Campus
     googleMapUrl:
+    sponsor: /images/logo-hite.svg
+    sponsorAlt: u of l hite logo
 
   - startTime: 1:00 pm
     endTime: 2:30 pm
@@ -30,6 +43,8 @@ events:
     alt:
     location: Mightily
     googleMapUrl: https://www.google.com/maps/place/Mightily/@38.2565312,-85.7542337,17z/data=!3m1!4b1!4m5!3m4!1s0x886972bbc5705713:0x1d9eb0c94ad6eb73!8m2!3d38.256527!4d-85.752045
+    sponsor: /images/logo-mightily.svg
+    sponsorAlt: mightily logo
 
   - startTime: 4:30 pm
     endTime: 6:00 pm
@@ -37,6 +52,8 @@ events:
     description:
     location: Hound Dog Press
     googleMapUrl: https://www.google.com/maps/place/Hound+Dog+Press/@38.2363132,-85.7305787,17z/data=!3m1!4b1!4m5!3m4!1s0x886972b8c1e9adef:0x251b8264ee113296!8m2!3d38.236309!4d-85.72839
+    sponsor: /images/logo-athens.jpg
+    sponsorAlt: athens logo
 
   - startTime: 6:00 pm
     endTime: 8:30 pm
@@ -47,4 +64,6 @@ events:
     alt: kate bingaman-burt headshot
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
+    sponsor: /images/logo-bullhorn.svg
+    sponsorAlt: bullhorn logo
 ---
