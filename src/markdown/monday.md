@@ -44,8 +44,8 @@ events:
     alt: dan barczak headshot
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
-    sponsor: /images/logo-story.svg
-    sponsorAlt: story logo
+    sponsor: /images/logo-ingrid.svg
+    sponsorAlt: ingrid design logo
 
   - startTime: 8:30 pm
     endTime: 10:00 pm
