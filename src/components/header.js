@@ -45,10 +45,10 @@ export default function Header({ menuLinks, toggleTheme, isChecked }) {
     <HeaderNav>
       <div className={hasScrolled ? 'header headerScrolled' : 'header'}>
         <Container>
-          <MenuButton onClick={handleMenuClick}>
+          <MenuButton onClick={handleMenuClick} aria-label="menu button">
             <SvgMenuBars className="hamburger" />
           </MenuButton>
-          <Link to="/">
+          <Link to="/" aria-label="go to home page">
             <SvgAigaLou className="logo" />
           </Link>
           <MenuWrapper>
