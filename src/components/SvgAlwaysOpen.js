@@ -101,6 +101,7 @@ const flicker = keyframes`
   100%  { opacity: 0.4; }
   to    { opacity: 1; }
 `;
+
 const AlwaysOpen = styled.g`
   .flicker1 {
     animation: ${flicker} 5s linear infinite;

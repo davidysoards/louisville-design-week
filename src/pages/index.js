@@ -6,8 +6,8 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import Events from '../components/Events';
-import SvgAlwaysOpen from '../components/SvgAlwaysOpen';
 import Featured from '../components/Featured';
+import HeroImage from '../components/HeroImage';
 
 export default function HomePage({ data }) {
   // console.log(data);
@@ -16,9 +16,7 @@ export default function HomePage({ data }) {
     <Layout>
       <SEO title="Home" />
       <Hero>
-        <SvgWrapper>
-          <SvgAlwaysOpen width="100%" intensity={4} blur={20} />
-        </SvgWrapper>
+        <HeroImage />
         <div>
           <Heading>{node.frontmatter.headline}</Heading>
           <SubHeading>{node.frontmatter.subHeadline}</SubHeading>
@@ -66,16 +64,6 @@ const Hero = styled.div`
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
     }
-  }
-`;
-
-const SvgWrapper = styled.div`
-  max-width: 540px;
-  width: 100%;
-  margin: 20px auto;
-  @media screen and (min-width: 1024px) {
-    margin: 40px auto;
-    flex-shrink: 0;
   }
 `;
 

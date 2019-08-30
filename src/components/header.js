@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect, useCallback } from 'react';
 import styled from '@emotion/styled';
+
 import ToggleSwitch from './ToggleSwitch';
 import SvgAigaLou from './SvgAigaLou';
 import SvgMenuBars from './SvgMenuBars';
