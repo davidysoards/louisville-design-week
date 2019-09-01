@@ -26,6 +26,40 @@ export default function HomePage({ data }) {
       <SectionHeading>Featured Speakers</SectionHeading>
       <Featured />
       <SectionHeading>Upcoming Events</SectionHeading>
+      <TicketInfo>
+        <p>
+          Purchase of a{' '}
+          <a
+            href="https://www.eventbrite.com/e/aigalou-design-week-19-passport-tickets-68574912409"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Passport{' '}
+          </a>
+          will allow free entry to “Free with passport” events.
+        </p>
+        <p>
+          A{' '}
+          <a
+            href="https://www.eventbrite.com/e/aigalou-design-week-19-passport-tickets-68574912409"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Passport
+          </a>{' '}
+          will also give you up to
+          <strong> 40% off select evening events.</strong>
+        </p>
+        <p>
+          Certain workshop prices are not discounted as that is the cost of
+          running the workshop.
+        </p>
+
+        <p>
+          More information/discount codes will be available upon receipt of
+          purchase.
+        </p>
+      </TicketInfo>
       <Events />
     </Layout>
   );
@@ -86,4 +120,8 @@ const SectionHeading = styled.h2`
   @media screen and (min-width: 1024px) {
     font-size: 2.2em;
   }
+`;
+
+const TicketInfo = styled.div`
+  margin-bottom: 20px;
 `;
