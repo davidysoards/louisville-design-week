@@ -37,7 +37,7 @@ events:
   - startTime: 11:00 am
     endTime: 1:00 pm
     title: 'Ciara LeRoy: Lettering with Thread - Make a Statement with Embroidery'
-    description:
+    description: This workshop merges two popular art forms - hand lettering and embroidery - to create a highly tactile piece of work that has something to say. Join Ciara LeRoy of Pretty Strange Design for this two-hour session on embroidery basics, capturing typographic inspiration and creating an embroidered composition that sends a message that is serious, silly, or somewhere in between.
     speaker: Ciara Leroy
     image: /images/headshot-ciara-leroy-2.jpg
     alt: Ciara Leroy headshot
