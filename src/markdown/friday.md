@@ -45,6 +45,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/The+Holy+Goat+Louisville/@38.2526172,-85.7426257,17z/data=!3m1!4b1!4m8!3m7!1s0x886972c5d2b58321:0x65f4ee2680a1f67d!5m2!4m1!1i2!8m2!3d38.252613!4d-85.740437
     sponsor: /images/logo-holy-goat.svg
     sponsorAlt: the holy goat logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-embroidered-typography-with-ciara-leroy-tickets-69263750743?aff=ebapi
 
   - startTime: 2:00 pm
     endTime: 4:00 pm
@@ -53,6 +54,7 @@ events:
     speaker: Brad Vetter
     location: Cave Hill Cemetery
     googleMapUrl: https://www.google.com/maps/place/Cave+Hill+Cemetery/@38.2454051,-85.7170115,17z/data=!3m1!4b1!4m5!3m4!1s0x88697331b893bc8b:0xd96806c24a7f12cf!8m2!3d38.2454009!4d-85.7148228
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-friday-the-13th-typography-at-cave-hill-cemetery-tickets-69147408761?aff=ebapi
 
   - startTime: 4:00 pm
     endTime: 6:00 pm
@@ -61,6 +63,7 @@ events:
     speaker:
     location: Always Open Storefront
     googleMapUrl: https://www.google.com/maps/place/827+E+Market+St,+Louisville,+KY+40206/@38.2535377,-85.7389026,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4c43512af:0x4a596a5908153b94!8m2!3d38.2535335!4d-85.7367139
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-in-house-design-teams-mixernetworking-tickets-69966263979?aff=ebapi
 
   - startTime: 6:00 pm
     endTime: 8:30 pm
@@ -73,4 +76,5 @@ events:
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
     sponsor: /images/logo-stewart.svg
     sponsorAlt: stewart and associates logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-gail-anderson-tickets-68394075521?aff=ebapi
 ---

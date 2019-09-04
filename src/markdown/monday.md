@@ -25,6 +25,7 @@ events:
     description: Let's get this party started! Unlock your ticket for the week. Swing by, sign in and pick up your passport.
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-kickoff-breakfast-tickets-68750754357?aff=ebapi
 
   - startTime: 5:00 pm
     endTime: 6:00 pm
@@ -34,6 +35,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
     sponsor: /images/logo-fieldtrip.svg
     sponsorAlt: fieldtrip logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-logo-challenge-with-fieldtrip-tickets-68751097383?aff=ebapi
 
   - startTime: 6:00 pm
     endTime: 8:30 pm
@@ -46,6 +48,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
     sponsor: /images/logo-ingrid.svg
     sponsorAlt: ingrid design logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-dan-barczak-tickets-68574605491?aff=ebapi
 
   - startTime: 8:30 pm
     endTime: 10:00 pm

@@ -13,6 +13,7 @@ export default function ScheduleRow({
   imgAlt,
   sponsor,
   sponsorAlt,
+  url,
 }) {
   return (
     <EventRow>
@@ -26,7 +27,13 @@ export default function ScheduleRow({
         </Time>
       </Column1>
       <div>
-        <Title>{title}</Title>
+        {url ? (
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <Title>{title}</Title>
+          </a>
+        ) : (
+          <Title>{title}</Title>
+        )}
         <Location href={googleMapUrl} target="_blank" rel="noopener noreferrer">
           {location}
         </Location>

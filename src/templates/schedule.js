@@ -42,6 +42,7 @@ export default function SchedulePage({ data }) {
             alt,
             sponsor,
             sponsorAlt,
+            url,
           } = event;
           return (
             <ScheduleRow
@@ -55,6 +56,7 @@ export default function SchedulePage({ data }) {
               imgAlt={alt}
               sponsor={sponsor}
               sponsorAlt={sponsorAlt}
+              url={url}
               key={title}
             />
           );
@@ -147,6 +149,7 @@ export const query = graphql`
               alt
               sponsor
               sponsorAlt
+              url
             }
           }
         }

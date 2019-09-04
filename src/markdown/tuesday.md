@@ -21,6 +21,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/VIA+Studio/@38.2524625,-85.7420979,17z/data=!3m1!4b1!4m5!3m4!1s0x886972dec5cc9407:0xb6df1269286cc200!8m2!3d38.2524583!4d-85.7399092
     sponsor: /images/logo-via.svg
     sponsorAlt: via studio logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-anxiety-in-the-creative-field-tickets-68751374211?aff=ebapi
 
   - startTime: 9:00 am
     endTime: 12:00 pm
@@ -33,6 +34,7 @@ events:
     googleMapUrl:
     sponsor: /images/logo-hite.svg
     sponsorAlt: u of l hite logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-dan-barczak-workshop-tickets-68751568793?aff=ebapi
 
   - startTime: 1:00 pm
     endTime: 2:30 pm
@@ -45,6 +47,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/Mightily/@38.2565312,-85.7542337,17z/data=!3m1!4b1!4m5!3m4!1s0x886972bbc5705713:0x1d9eb0c94ad6eb73!8m2!3d38.256527!4d-85.752045
     sponsor: /images/logo-mightily.svg
     sponsorAlt: mightily logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-ux-a-newold-frontier-tickets-69830820865?aff=ebapi
 
   - startTime: 4:30 pm
     endTime: 6:00 pm
@@ -54,6 +57,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/Hound+Dog+Press/@38.2363132,-85.7305787,17z/data=!3m1!4b1!4m5!3m4!1s0x886972b8c1e9adef:0x251b8264ee113296!8m2!3d38.236309!4d-85.72839
     sponsor: /images/logo-athens.jpg
     sponsorAlt: athens logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-happy-hour-by-athens-paper-tickets-68751865681?aff=ebapi
 
   - startTime: 6:00 pm
     endTime: 8:30 pm
@@ -66,4 +70,5 @@ events:
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165
     sponsor: /images/logo-bullhorn.svg
     sponsorAlt: bullhorn logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-kate-bingaman-burt-tickets-68574132075?aff=ebapi
 ---

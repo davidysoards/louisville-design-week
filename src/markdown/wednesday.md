@@ -31,6 +31,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/The+Speed+Art+Museum/@38.2176588,-85.763086,17z/data=!3m1!4b1!4m5!3m4!1s0x88690d67351e6629:0xe1ab758d0e55eb58!8m2!3d38.2176546!4d-85.7608973
     sponsor: /images/logo-speed.svg
     sponsorAlt: speed art museum logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-designers-tour-of-the-speed-tickets-69832106711?aff=ebapi
 
   - startTime: 1:00 pm
     endTime: 4:00 pm
@@ -43,6 +44,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/KMAC+Museum/@38.257524,-85.762142,15z/data=!4m5!3m4!1s0x0:0x56ad8074ec0badc3!8m2!3d38.257524!4d-85.762142
     sponsor: /images/logo-doe-anderson.svg
     sponsorAlt: doe anderson logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-kate-bingaman-burt-workshop-tickets-68753279911?aff=ebapi
 
   - startTime: 4:00 pm
     endTime: 6:00 pm
@@ -51,6 +53,7 @@ events:
     speaker:
     location: Always Open Storefront
     googleMapUrl: https://www.google.com/maps/place/827+E+Market+St,+Louisville,+KY+40206/@38.2535377,-85.7389026,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4c43512af:0x4a596a5908153b94!8m2!3d38.2535335!4d-85.7367139
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-beer-package-design-panel-with-jessica-fey-tickets-71466037843?aff=ebapi
 
   - startTime: 6:00 pm
     endTime: 8:30 pm
@@ -63,6 +66,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/Story/@38.252946,-85.737678,15z/data=!4m5!3m4!1s0x0:0xdd26101c52f460b8!8m2!3d38.252946!4d-85.737678
     sponsor: /images/logo-millcraft.svg
     sponsorAlt: millcraft logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-ben-blount-tickets-68573708809?aff=ebapi
 
   - startTime: 9:00 pm
     endTime: 11:00 pm
@@ -75,4 +79,5 @@ events:
     googleMapUrl: https://www.google.com/maps/place/VIA+Studio/@38.2524625,-85.7420979,17z/data=!3m1!4b1!4m5!3m4!1s0x886972dec5cc9407:0xb6df1269286cc200!8m2!3d38.2524583!4d-85.7399092
     sponsor: /images/logo-via.svg
     sponsorAlt: via studio logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-the-great-via-studio-spelling-bee-tickets-68753468475?aff=ebapi
 ---

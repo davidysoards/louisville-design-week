@@ -21,6 +21,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/VIA+Studio/@38.2524625,-85.7420979,17z/data=!3m1!4b1!4m5!3m4!1s0x886972dec5cc9407:0xb6df1269286cc200!8m2!3d38.2524583!4d-85.7399092
     sponsor: /images/logo-via.svg
     sponsorAlt: via studio logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-via-studio-printmaking-event-tickets-68753649015?aff=ebapi
 
   - startTime: 9:00 am
     endTime: 11:00 am
@@ -31,6 +32,7 @@ events:
     googleMapUrl:
     sponsor: /images/logo-humana.svg
     sponsorAlt: humana experience center logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-collaborative-design-workshop-at-humana-tickets-69953911031?aff=ebapi
 
   - startTime: 1:00 pm
     endTime: 4:00 pm
@@ -43,6 +45,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/Brad+Vetter+Letterpress+Studio/@38.2358421,-85.739893,17z/data=!3m1!4b1!4m5!3m4!1s0x88690d3245c5973f:0xed2d901d34dc93c!8m2!3d38.2358379!4d-85.7377043
     sponsor: /images/logo-brad-vetter.svg
     sponsorAlt: brad vetter design studio logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-ben-blount-workshop-tickets-70865026201?aff=ebapi
 
   - startTime: 2:00 pm
     endTime: 4:00 pm
@@ -55,6 +58,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/Vivid+Impact+Corporation/@38.214342,-85.5684667,17z/data=!3m1!4b1!4m5!3m4!1s0x8869a03429515c89:0x2d174ab00089d9b7!8m2!3d38.2143378!4d-85.566278
     sponsor: /images/logo-vivid.svg
     sponsorAlt: vivid logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-vivid-impact-tour-tickets-70091913801?aff=ebapi
 
   - startTime: 4:30 pm
     endTime: 8:30 pm
@@ -65,6 +69,7 @@ events:
     googleMapUrl: https://www.google.com/maps/place/Camp+Social+Club/@38.2384117,-85.7625941,15z/data=!4m5!3m4!1s0x0:0xa7a182d1365e0416!8m2!3d38.2384117!4d-85.7625941
     sponsor: /images/logo-camp.jpg
     sponsorAlt: camp logo
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-camp-social-club-pinball-happy-hour-tickets-70755486565?aff=ebapi
 
   - startTime: 6:00 pm
     endTime: 8:30 pm
@@ -75,6 +80,7 @@ events:
     alt: jeremiah chiu headshot
     location: The Green Building
     googleMapUrl: https://www.google.com/maps/place/The+Green+Building+Gallery/@38.2531311,-85.7409124,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4540d0bbb:0xc2c0dbc60d495f14!8m2!3d38.2531269!4d-85.7387237
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-jeremiah-chiu-keynote-tickets-69967876803?aff=ebapi
 
   - startTime: 8:30 pm
     endTime: 11:00 pm
@@ -85,4 +91,5 @@ events:
     alt: jeremiah chiu headshot
     location: Galaxie Bar
     googleMapUrl: https://www.google.com/maps/place/Galaxie/@38.2531087,-85.740866,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4540d0bbb:0xe7a561065a1c7915!8m2!3d38.2531045!4d-85.7386773
+    url: https://www.eventbrite.com/e/aigalou-design-week-19-jeremiah-chiu-after-party-tickets-69970195739?aff=ebapi
 ---
