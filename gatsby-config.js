@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Louisville Design Week`,
     subtitle: `September 9th - 14th, 2019`,
-    description: `Info on Events and Schedule for AIGA Louisville's Annual Design Week.`,
+    description: `AIGA Louisville or AIGA LOU Design Week is an annual celebration of all things design, printmaking, UX, typography, creativity & more!`,
     author: `David Soards`,
     url: `https://louisvilledesignweek.com`, // No trailing slash allowed!
     image: `/images/og-image.png`, // Path to your image you placed in the 'static' folder
