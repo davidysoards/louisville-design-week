@@ -95,3 +95,16 @@ menu {
   padding: 0;
   margin: 0;
 }
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}

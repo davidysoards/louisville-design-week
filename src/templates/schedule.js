@@ -5,16 +5,22 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import ScheduleRow from '../components/ScheduleRow';
+import ReactModal from 'react-modal';
+import map from '../../static/images/map-design-week.png';
 
 export default function SchedulePage({ data }) {
   const [daySelectIndex, setDaySelectIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const days = data.allMarkdownRemark.edges;
 
   return (
     <Layout>
       <SEO title="Schedule" />
-      <PageTitle>Schedule</PageTitle>
+      <PageTitleWrapper>
+        <PageTitle>Schedule</PageTitle>
+        <MapsButton onClick={() => setIsModalOpen(true)}>View Maps</MapsButton>
+      </PageTitleWrapper>
       <ScheduleMenu>
         {days.map((edge, index) => {
           const { dayOfWeek } = edge.node.frontmatter;
@@ -62,6 +68,34 @@ export default function SchedulePage({ data }) {
           );
         })}
       </ScheduleContainer>
+      <ReactModal
+        isOpen={isModalOpen}
+        onRequestClose={() => setIsModalOpen(false)}
+        contentLabel="Map Modal"
+        closeTimeoutMS={500}
+        style={{
+          overlay: {
+            backgroundColor: 'rgba(0, 0, 0, 0.75)',
+            zIndex: 999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
+          content: {
+            position: 'static',
+            border: 'none',
+            background: 'none',
+            padding: '0',
+            borderRadius: 'none',
+          },
+        }}
+      >
+        <img
+          src={map}
+          alt="design week maps"
+          style={{ maxHeight: 'calc(100vh - 80px)', width: 'auto' }}
+        />
+      </ReactModal>
     </Layout>
   );
 }
@@ -70,17 +104,39 @@ SchedulePage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-const PageTitle = styled.h1`
-  text-align: center;
+const PageTitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
   margin-top: 64px;
   margin-bottom: 10px;
+  @media screen and (min-width: 1000px) {
+    margin-top: 84px;
+  }
+`;
+
+const PageTitle = styled.h1`
+  text-align: center;
   font-size: 2em;
+  margin-right: 1rem;
   @media screen and (min-width: 700px) {
     font-size: 3em;
   }
-  @media screen and (min-width: 1000px) {
-    text-align: left;
-    margin-top: 84px;
+`;
+
+const MapsButton = styled.button`
+  border: 2px solid var(--color-secondary);
+  background: none;
+  color: var(--color-secondary);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color 0.3s, background 0.3s;
+  &:hover {
+    background: var(--color-secondary);
+    color: var(--color-bg);
   }
 `;
 

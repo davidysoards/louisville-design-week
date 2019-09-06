@@ -40,8 +40,6 @@ SocialLinks.propTypes = {
 const IconContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  /* padding: 10px 0;
-  margin-bottom: 20px; */
 `;
 
 const Wrapper = styled.div`
