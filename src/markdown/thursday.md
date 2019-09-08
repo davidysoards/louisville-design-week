@@ -74,22 +74,26 @@ events:
   - startTime: 6:00 pm
     endTime: 8:30 pm
     title: Jeremiah Chiu
-    description:
+    description: The sounds of Los Angeles based artist Jeremiah Chiu/Some All None (LIVE) with support from Jason Clark (LIVE) and Jim Zimmer (DJ). Come early for a keynote discussion of Jeremiah’s design practice Some All None and stay late for cosmic sounds in Outerspace.
     speaker: Jeremiah Chiu
     image: /images/headshot-jeremiah-chiu.jpg
     alt: jeremiah chiu headshot
     location: The Green Building
+    sponsor: /images/logo-fieldtrip.svg
+    sponsorAlt: fieldtrip logo
     googleMapUrl: https://www.google.com/maps/place/The+Green+Building+Gallery/@38.2531311,-85.7409124,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4540d0bbb:0xc2c0dbc60d495f14!8m2!3d38.2531269!4d-85.7387237
     url: https://www.eventbrite.com/e/aigalou-design-week-19-jeremiah-chiu-keynote-tickets-69967876803?aff=ebapi
 
   - startTime: 8:30 pm
     endTime: 11:00 pm
     title: Jeremiah Chiu After Party
-    description:
+    description: 🔥 👽 👾 🚀 🔥
     speaker: Jeremiah Chiu
     image: /images/headshot-jeremiah-chiu.jpg
     alt: jeremiah chiu headshot
     location: Galaxie Bar
+    sponsor: /images/logo-via.svg
+    sponsorAlt: via studio logo
     googleMapUrl: https://www.google.com/maps/place/Galaxie/@38.2531087,-85.740866,17z/data=!3m1!4b1!4m5!3m4!1s0x886972c4540d0bbb:0xe7a561065a1c7915!8m2!3d38.2531045!4d-85.7386773
     url: https://www.eventbrite.com/e/aigalou-design-week-19-jeremiah-chiu-after-party-tickets-69970195739?aff=ebapi
 ---
