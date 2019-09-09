@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { graphql } from 'gatsby';
+import { getDay } from 'date-fns';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import ScheduleRow from '../components/ScheduleRow';
@@ -11,6 +12,13 @@ import map from '../../static/images/map-design-week.png';
 export default function SchedulePage({ data }) {
   const [daySelectIndex, setDaySelectIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    const dayOfWeek = getDay(new Date());
+    const dayOfWeekIndex = dayOfWeek === 0 ? 0 : dayOfWeek - 1;
+    console.log(dayOfWeekIndex);
+    setDaySelectIndex(dayOfWeekIndex);
+  }, []);
 
   const days = data.allMarkdownRemark.edges;
 
