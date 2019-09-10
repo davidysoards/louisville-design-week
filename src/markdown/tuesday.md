@@ -61,10 +61,10 @@ events:
 
   - startTime: 6:00 pm
     endTime: 8:30 pm
-    title: 'Kate Bingaman-Burt: Space is the Place'
+    title: 'CANCELED Kate Bingaman-Burt: Space is the Place'
     description: Illustrator and educator, Kate Bingaman-Burt is a little more than obsessed with bringing people together through creative work and developing spaces for making and sharing to happen. Come and join Kate as she talks about her long-time drawing practices, her print studio Outlet, her love of bookmobiles, and why making spaces into places has been the one consistent throughline in her sort of all over the place career.
     speaker: Kate Bingaman-Burt
-    image: /images/headshot-kate-bingaman-burt-2.jpg
+    image: /images/headshot-kate-bingaman-burt-canceled.jpg
     alt: kate bingaman-burt headshot
     location: Story Louisville
     googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2541017,-85.7378052,17z/data=!3m1!4b1!4m5!3m4!1s0x886972db4be694c9:0x5714d0e59139e964!8m2!3d38.2540975!4d-85.7356165

@@ -35,10 +35,10 @@ events:
 
   - startTime: 1:00 pm
     endTime: 4:00 pm
-    title: 'Kate Bingaman-Burt: Risograph Open Studio'
+    title: 'CANCELED Kate Bingaman-Burt: Risograph Open Studio'
     description: Come and learn all about the basics of the Risograph. This Open Studio will have piles of print and zine examples as well as Risograph resource materials, mark making and collage supplies to make your own two color print and/or one page zine! Come and join us for a general exploration of how we can get the best results from this amazing printing machine. Participants will take home a small edition of their 2-color 8.5x11 prints of your own design plus a chance to participate in the Leave a Print / Take a Print Pile.
     speaker: Kate Bingaman-Burt
-    image: /images/headshot-kate-bingaman-burt-2.jpg
+    image: /images/headshot-kate-bingaman-burt-canceled.jpg
     alt: kate bingaman-burt headshot
     location: KMAC Museum
     googleMapUrl: https://www.google.com/maps/place/KMAC+Museum/@38.257524,-85.762142,15z/data=!4m5!3m4!1s0x0:0x56ad8074ec0badc3!8m2!3d38.257524!4d-85.762142
