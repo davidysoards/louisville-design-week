@@ -63,7 +63,7 @@ events:
     image: /images/headshot-ben-blount.jpg
     alt: ben blount headshot
     location: Story Louisville
-    googleMapUrl: https://www.google.com/maps/place/Story/@38.252946,-85.737678,15z/data=!4m5!3m4!1s0x0:0xdd26101c52f460b8!8m2!3d38.252946!4d-85.737678
+    googleMapUrl: https://www.google.com/maps/place/900+E+Main+St,+Louisville,+KY+40206/@38.2538784,-85.7375906,16z/data=!4m2!3m1!1s0x886972db4be694c9:0x5714d0e59139e964
     sponsor: /images/logo-millcraft.svg
     sponsorAlt: millcraft logo
     url: https://www.eventbrite.com/e/aigalou-design-week-19-ben-blount-tickets-68573708809?aff=ebapi
